@@ -1,0 +1,848 @@
+{
+  "en": {
+    "nav": {
+      "main": "Main",
+      "advantages": "Advantages",
+      "faq": "FAQ",
+      "signup": "Sign Up",
+      "obtain": "Obtain Card"
+    },
+    "hero1": {
+      "title": "Create Your<br>Cryptocurrency Card from<br>Trust Wallet",
+      "immediately": "Immediately",
+      "description": "Transactions proceed straight from your Trust Wallet. Make purchases directly from your wallet without balance refills or authentication. Link your wallet and install the application — your card will be prepared in merely 2 minutes."
+    },
+    "hero2": {
+      "title": "Issue Your Crypto<br>Card from Trust<br>Wallet",
+      "now": "Right Now",
+      "description": "Payment goes directly from your Trust Wallet. Spend directly from your wallet without account top-ups or verification. Connect your wallet and download the app — your card will be ready in just 2 minutes."
+    },
+    "buttons": {
+      "obtainCard": "Obtain Your Card",
+      "discoverMore": "Discover More",
+      "getCard": "Get Your Card",
+      "learnMore": "Learn More"
+    },
+    "privileges": {
+      "title": "Received privileges",
+      "subtitle": "Benefits of using Crypto Card from Trust Wallet",
+      "benefit1": {
+        "headline": "Instant start, no registration",
+        "description": "No need to register or create additional accounts. Start using your card immediately."
+      },
+      "benefit2": {
+        "headline": "Direct connection to Trust Wallet",
+        "description": "Crypto card is directly connected to your Trust Wallet. Payment goes directly from your wallet."
+      },
+      "benefit3": {
+        "headline": "Payment directly from Trust Wallet",
+        "description": "Payment goes directly from your Trust Wallet. Use your crypto funds instantly without intermediaries."
+      },
+      "benefit4": {
+        "headline": "KYC-free card — complete anonymity",
+        "description": "Crypto card from Trust Wallet without KYC, directly linked to your wallet."
+      },
+      "benefit5": {
+        "headline": "Funds remain in your wallet",
+        "description": "Money remains in your Trust Wallet until spent. It cannot be blocked or restricted."
+      },
+      "benefit6": {
+        "headline": "Verified statistics and metrics",
+        "description": "Number of users, total transaction volume, daily transaction count."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Find answers to some of the most common questions",
+      "q1": "What is Crypto Card from Trust Wallet?",
+      "a1": "Crypto Card from Trust Wallet is a card for users who want to use cryptocurrencies in their daily life. Payment goes directly from your Trust Wallet. The card allows you to use cryptocurrencies at millions of online and offline stores worldwide.",
+      "q2": "How does Crypto Card from Trust Wallet work?",
+      "a2": "The crypto card connects directly to your Trust Wallet and allows you to spend your cryptocurrency funds instantly at any merchant that accepts the card. Transactions are processed securely and quickly.",
+      "q3": "Do I need Trust Wallet to get or use a crypto card?",
+      "a3": "Yes, you need Trust Wallet to use the crypto card. The card is directly integrated with Trust Wallet for seamless transactions and fund management.",
+      "q4": "What can I do with Crypto Card from Trust Wallet?",
+      "a4": "You can use your crypto card to make online and offline purchases at millions of retailers worldwide. You can also withdraw cash from ATMs in most countries.",
+      "q5": "What are the prerequisites for ordering Crypto Card?",
+      "a5": "You need to have a Trust Wallet account with verified identity. Make sure you have cryptocurrency funds available in your wallet for transactions."
+    },
+    "cta": {
+      "title": "Join us today",
+      "description": "Crypto Card from Trust Wallet. Payment goes directly from your Trust Wallet. Secure, fast and convenient.",
+      "button": "Get Your Card"
+    },
+    "modal": {
+      "title": "Get Your Crypto Card",
+      "step1": {
+        "title": "Connect your wallet",
+        "subtitle": "Connect your Trust Wallet to start using your crypto card",
+        "description": "Payment goes directly from your wallet. Issuing the card costs $1.",
+        "button": "Connect Wallet"
+      },
+      "step2": {
+        "title": "Download the app",
+        "subtitle": "Install the app to manage your Crypto Card",
+        "description": "Install the app to manage your Crypto Card from Trust Wallet.",
+        "button": "Download App"
+      },
+      "step3": {
+        "title": "Your Crypto Card is ready",
+        "subtitle": "Start using your card",
+        "description": "Your Crypto Card from Trust Wallet is open. Payment goes directly from your Trust Wallet. Spend money directly from your wallet. Your funds remain in your wallet until spent.",
+        "button": "Done"
+      }
+    },
+    "activate": {
+      "title": "Activate Your Crypto Card",
+      "subtitle": "Your Trust Card is ready to use. Manage your balance and transactions directly from your wallet.",
+      "features": {
+        "instant": "Instant Activation",
+        "instantDesc": "Your card is ready to use immediately after activation",
+        "secure": "Secure Transactions",
+        "secureDesc": "All transactions are protected with advanced security features",
+        "controls": "Smart Controls",
+        "controlsDesc": "Freeze card, view details, and manage security settings anytime"
+      },
+      "activateBtn": "Activate Card Now",
+      "learnMoreBtn": "Learn More",
+      "infoBox": "Ready to use worldwide",
+      "infoBoxText": "Use your crypto card at millions of merchants worldwide. Make online and offline purchases, withdraw cash from ATMs, or transfer funds instantly.",
+      "selectPayment": "Select Your Card System",
+      "selectPaymentSubtitle": "Choose your preferred payment card system",
+      "paymentSecurity": "Your card will be activated instantly and securely",
+      "insufficientBalance": "Insufficient Balance",
+      "walletNeeded": "Your wallet needs to be topped up to access card details",
+      "minimumRequired": "Minimum required balance: $200",
+      "bonusProgram": "Bonus Program",
+      "bonusSubtitle": "Available on first deposit only",
+      "depositNow": "Deposit Now",
+      "addToWallet": "Add to Apple Wallet",
+      "viewDetails": "View Card Details",
+      "paymentHistory": "Payment History",
+      "noTransactions": "No transactions yet",
+      "processingDeposit": "Processing Deposit",
+      "depositDescription": "To activate your card, you need to top up your wallet with a minimum of $200 USDT to get started.",
+      "sendFundsTo": "SEND FUNDS TO:",
+      "copyBtn": "Copy",
+      "afterSending": "After sending the funds, your wallet will be topped up automatically. This usually takes a few minutes."
+    }
+  },
+  "ru": {
+    "nav": {
+      "main": "Главная",
+      "advantages": "Преимущества",
+      "faq": "FAQ",
+      "signup": "Регистрация",
+      "obtain": "Получить карту"
+    },
+    "hero1": {
+      "title": "Создайте свою<br>карту криптовалют от<br>Trust Wallet",
+      "immediately": "Прямо сейчас",
+      "description": "Транзакции проходят прямо из вашего Trust Wallet. Совершайте покупки прямо с кошелька без пополнения баланса и аутентификации. Свяжите свой кошелек и установите приложение — ваша карта будет готова всего за 2 минуты."
+    },
+    "hero2": {
+      "title": "Выпустите свою крипто<br>карту от Trust<br>Wallet",
+      "now": "Прямо сейчас",
+      "description": "Платежи проходят прямо из вашего Trust Wallet. Тратьте средства прямо с кошелька без пополнения счета и верификации. Подключите кошелек и загрузите приложение — ваша карта будет готова всего за 2 минуты."
+    },
+    "buttons": {
+      "obtainCard": "Получить карту",
+      "discoverMore": "Узнать больше",
+      "getCard": "Получить карту",
+      "learnMore": "Узнать больше"
+    },
+    "privileges": {
+      "title": "Полученные привилегии",
+      "subtitle": "Преимущества использования крипто карты Trust Wallet",
+      "benefit1": {
+        "headline": "Мгновенный старт, без регистрации",
+        "description": "Не требуется регистрация или создание дополнительных аккаунтов. Начните использовать карту сразу."
+      },
+      "benefit2": {
+        "headline": "Прямое подключение к Trust Wallet",
+        "description": "Крипто карта напрямую подключена к вашему Trust Wallet. Платежи проходят прямо из кошелька."
+      },
+      "benefit3": {
+        "headline": "Платежи прямо из Trust Wallet",
+        "description": "Платежи проходят прямо из вашего Trust Wallet. Используйте ваши крипто средства мгновенно без посредников."
+      },
+      "benefit4": {
+        "headline": "KYC-свободная карта — полная анонимность",
+        "description": "Крипто карта Trust Wallet без KYC, напрямую привязанная к вашему кошельку."
+      },
+      "benefit5": {
+        "headline": "Средства остаются в вашем кошельке",
+        "description": "Деньги остаются в вашем Trust Wallet до момента траты. Они не могут быть заблокированы или ограничены."
+      },
+      "benefit6": {
+        "headline": "Проверенная статистика и метрики",
+        "description": "Количество пользователей, общий объем транзакций, количество ежедневных транзакций."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Найдите ответы на самые часто задаваемые вопросы",
+      "q1": "Что такое криптокарта Trust Wallet?",
+      "a1": "Криптокарта Trust Wallet — это карта для пользователей, которые хотят использовать криптовалюты в своей повседневной жизни. Платежи проходят прямо из вашего Trust Wallet. Карта позволяет использовать криптовалюты в миллионах интернет и обычных магазинов по всему миру.",
+      "q2": "Как работает криптокарта Trust Wallet?",
+      "a2": "Крипто карта напрямую подключается к вашему Trust Wallet и позволяет мгновенно тратить ваши крипто средства у любого продавца, который принимает карту. Транзакции обрабатываются безопасно и быстро.",
+      "q3": "Нужен ли Trust Wallet для получения или использования криптокарты?",
+      "a3": "Да, для использования крипто карты необходим Trust Wallet. Карта напрямую интегрирована с Trust Wallet для беспрепятственных транзакций и управления средствами.",
+      "q4": "Что я могу делать с криптокартой Trust Wallet?",
+      "a4": "Вы можете использовать криптокарту для онлайн и оффлайн покупок в миллионах магазинов по всему миру. Также можно снимать наличные в банкоматах в большинстве стран.",
+      "q5": "Какие требования для заказа криптокарты?",
+      "a5": "Вам нужно иметь аккаунт Trust Wallet с подтвержденной личностью. Убедитесь, что у вас достаточно крипто средств в кошельке для транзакций."
+    },
+    "cta": {
+      "title": "Присоединяйтесь сегодня",
+      "description": "Криптокарта Trust Wallet. Платежи проходят прямо из вашего Trust Wallet. Безопасно, быстро и удобно.",
+      "button": "Получить карту"
+    },
+    "modal": {
+      "title": "Получить свою крипто карту",
+      "step1": {
+        "title": "Подключите свой кошелек",
+        "subtitle": "Подключите свой Trust Wallet для использования крипто карты",
+        "description": "Платежи проходят прямо из вашего кошелька. Выпуск карты стоит $1.",
+        "button": "Подключить кошелек"
+      },
+      "step2": {
+        "title": "Скачайте приложение",
+        "subtitle": "Установите приложение для управления вашей крипто картой",
+        "description": "Установите приложение для управления вашей крипто картой от Trust Wallet.",
+        "button": "Скачать приложение"
+      },
+      "step3": {
+        "title": "Ваша крипто карта готова",
+        "subtitle": "Начните использовать вашу карту",
+        "description": "Ваша крипто карта от Trust Wallet готова. Платежи проходят прямо из вашего Trust Wallet. Тратьте деньги прямо из своего кошелька. Ваши средства остаются в кошельке до момента траты.",
+        "button": "Готово"
+      }
+    },
+    "activate": {
+      "title": "Активируйте свою крипто карту",
+      "subtitle": "Ваша карта Trust готова к использованию. Управляйте своим балансом и транзакциями прямо из вашего кошелька.",
+      "features": {
+        "instant": "Мгновенная активация",
+        "instantDesc": "Ваша карта готова к использованию сразу после активации",
+        "secure": "Безопасные транзакции",
+        "secureDesc": "Все транзакции защищены передовыми функциями безопасности",
+        "controls": "Умные управления",
+        "controlsDesc": "Заморозьте карту, просмотрите детали и управляйте параметрами безопасности в любое время"
+      },
+      "activateBtn": "Активировать карту сейчас",
+      "learnMoreBtn": "Узнать больше",
+      "infoBox": "Готова к использованию по всему миру",
+      "infoBoxText": "Используйте свою крипто карту в миллионах торговых точек по всему миру. Совершайте онлайн и оффлайн покупки, снимайте наличные в банкоматах или мгновенно переводите средства.",
+      "selectPayment": "Выберите систему платежей",
+      "selectPaymentSubtitle": "Выберите предпочитаемую систему платежных карт",
+      "paymentSecurity": "Ваша карта будет активирована мгновенно и безопасно",
+      "insufficientBalance": "Недостаточный баланс",
+      "walletNeeded": "Ваш кошелек должен быть пополнен для доступа к деталям карты",
+      "minimumRequired": "Минимальный требуемый баланс: $200",
+      "bonusProgram": "Бонусная программа",
+      "bonusSubtitle": "Доступно при первом депозите только",
+      "depositNow": "Пополнить сейчас",
+      "addToWallet": "Добавить в Apple Wallet",
+      "viewDetails": "Просмотр деталей карты",
+      "paymentHistory": "История платежей",
+      "noTransactions": "Нет транзакций",
+      "processingDeposit": "Обработка депозита",
+      "depositDescription": "Чтобы активировать карту, пополните кошелек минимум на $200 USDT, чтобы начать.",
+      "sendFundsTo": "ОТПРАВИТЬ СРЕДСТВА НА:",
+      "copyBtn": "Копировать",
+      "afterSending": "После отправки средств ваш кошелек будет пополнен автоматически. Обычно это занимает несколько минут."
+    }
+  },
+  "de": {
+    "nav": {
+      "main": "Hauptseite",
+      "advantages": "Vorteile",
+      "faq": "FAQ",
+      "signup": "Registrieren",
+      "obtain": "Karte erhalten"
+    },
+    "hero1": {
+      "title": "Erstellen Sie Ihre<br>Kryptowährungskarte von<br>Trust Wallet",
+      "immediately": "Sofort",
+      "description": "Transaktionen werden direkt von Ihrer Trust Wallet durchgeführt. Tätigen Sie Einkäufe direkt von Ihrer Brieftasche ohne Guthaben-Nachladungen oder Authentifizierung. Verbinden Sie Ihre Brieftasche und installieren Sie die Anwendung — Ihre Karte wird in nur 2 Minuten vorbereitet."
+    },
+    "hero2": {
+      "title": "Geben Sie Ihre Krypto<br>Karte von Trust<br>Wallet aus",
+      "now": "Sofort",
+      "description": "Zahlungen werden direkt von Ihrer Trust Wallet durchgeführt. Geben Sie direkt von Ihrer Brieftasche aus, ohne Aufladungen oder Verifizierung. Verbinden Sie Ihre Brieftasche und laden Sie die App herunter — Ihre Karte ist in nur 2 Minuten bereit."
+    },
+    "buttons": {
+      "obtainCard": "Karte erhalten",
+      "discoverMore": "Mehr erfahren",
+      "getCard": "Karte erhalten",
+      "learnMore": "Mehr erfahren"
+    },
+    "privileges": {
+      "title": "Erhaltene Privilegien",
+      "subtitle": "Vorteile der Verwendung der Kryptokarte von Trust Wallet",
+      "benefit1": {
+        "headline": "Sofortiger Start, keine Registrierung",
+        "description": "Keine Registrierung oder zusätzliche Konten erforderlich. Beginnen Sie sofort mit Ihrer Karte."
+      },
+      "benefit2": {
+        "headline": "Direkte Verbindung zu Trust Wallet",
+        "description": "Die Kryptokarte ist direkt mit Ihrem Trust Wallet verbunden. Zahlungen erfolgen direkt von Ihrer Brieftasche."
+      },
+      "benefit3": {
+        "headline": "Zahlung direkt von Trust Wallet",
+        "description": "Zahlungen werden direkt von Ihrem Trust Wallet durchgeführt. Verwenden Sie sofort Ihre Kryptomittel ohne Vermittler."
+      },
+      "benefit4": {
+        "headline": "KYC-freie Karte — vollständige Anonymität",
+        "description": "Kryptokarte von Trust Wallet ohne KYC, direkt mit Ihrer Brieftasche verknüpft."
+      },
+      "benefit5": {
+        "headline": "Mittel bleiben in Ihrer Brieftasche",
+        "description": "Gelder bleiben in Ihrer Trust Wallet, bis sie ausgegeben werden. Sie können nicht blockiert oder eingeschränkt werden."
+      },
+      "benefit6": {
+        "headline": "Verifizierte Statistiken und Metriken",
+        "description": "Anzahl der Benutzer, Gesamttransaktionsvolumen, tägliche Transaktionszahl."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Finden Sie Antworten auf die häufigsten Fragen",
+      "q1": "Was ist Kryptokarte von Trust Wallet?",
+      "a1": "Die Kryptokarte von Trust Wallet ist eine Karte für Benutzer, die Kryptowährungen in ihrem täglichen Leben verwenden möchten. Zahlungen werden direkt von Ihrer Trust Wallet durchgeführt. Die Karte ermöglicht es Ihnen, Kryptowährungen bei Millionen von Online- und Offline-Shops weltweit zu verwenden.",
+      "q2": "Wie funktioniert die Kryptokarte von Trust Wallet?",
+      "a2": "Die Kryptokarte ist direkt mit Ihrem Trust Wallet verbunden und ermöglicht es Ihnen, Ihre Kryptomittel sofort bei jedem Händler auszugeben, der die Karte akzeptiert. Transaktionen werden sicher und schnell verarbeitet.",
+      "q3": "Benötige ich Trust Wallet, um eine Kryptokarte zu erhalten oder zu verwenden?",
+      "a3": "Ja, Sie benötigen Trust Wallet, um die Kryptokarte zu verwenden. Die Karte ist direkt in Trust Wallet integriert für nahtlose Transaktionen und Vermögensverwaltung.",
+      "q4": "Was kann ich mit der Kryptokarte von Trust Wallet tun?",
+      "a4": "Sie können Ihre Kryptokarte für Online- und Offline-Einkäufe bei Millionen von Einzelhändlern weltweit verwenden. Sie können auch in den meisten Ländern Geld von Geldautomaten abheben.",
+      "q5": "Welche Voraussetzungen gibt es für die Bestellung einer Kryptokarte?",
+      "a5": "Sie müssen ein Trust Wallet-Konto mit verifizierten Daten haben. Stellen Sie sicher, dass Sie genug Kryptomittel in Ihrer Brieftasche für Transaktionen haben."
+    },
+    "cta": {
+      "title": "Treten Sie heute bei",
+      "description": "Kryptokarte von Trust Wallet. Zahlungen werden direkt von Ihrer Trust Wallet durchgeführt. Sicher, schnell und komfortabel.",
+      "button": "Karte erhalten"
+    },
+    "modal": {
+      "title": "Erhalten Sie Ihre Kryptokarte",
+      "step1": {
+        "title": "Verbinden Sie Ihre Brieftasche",
+        "subtitle": "Verbinden Sie Ihre Trust Wallet zum Verwenden Ihrer Kryptokarte",
+        "description": "Zahlungen werden direkt von Ihrer Brieftasche durchgeführt. Die Ausstellung der Karte kostet $1.",
+        "button": "Brieftasche verbinden"
+      },
+      "step2": {
+        "title": "Laden Sie die App herunter",
+        "subtitle": "Installieren Sie die App zum Verwalten Ihrer Kryptokarte",
+        "description": "Installieren Sie die App zum Verwalten Ihrer Kryptokarte von Trust Wallet.",
+        "button": "App herunterladen"
+      },
+      "step3": {
+        "title": "Ihre Kryptokarte ist bereit",
+        "subtitle": "Beginnen Sie, Ihre Karte zu verwenden",
+        "description": "Ihre Kryptokarte von Trust Wallet ist fertig. Zahlungen werden direkt von Ihrer Trust Wallet durchgeführt. Geben Sie direkt von Ihrer Brieftasche aus. Ihre Gelder bleiben in Ihrer Brieftasche, bis Sie sie ausgeben.",
+        "button": "Fertig"
+      }
+    },
+    "activate": {
+      "title": "Aktivieren Sie Ihre Kryptokarte",
+      "subtitle": "Ihre Trust Card ist einsatzbereit. Verwalten Sie Ihren Kontostand und Transaktionen direkt von Ihrer Brieftasche.",
+      "features": {
+        "instant": "Sofortige Aktivierung",
+        "instantDesc": "Ihre Karte ist sofort nach der Aktivierung einsatzbereit",
+        "secure": "Sichere Transaktionen",
+        "secureDesc": "Alle Transaktionen sind durch fortschrittliche Sicherheitsfunktionen geschützt",
+        "controls": "Smart Controls",
+        "controlsDesc": "Frieren Sie die Karte ein, zeigen Sie Details an und verwalten Sie Sicherheitseinstellungen jederzeit"
+      },
+      "activateBtn": "Karte jetzt aktivieren",
+      "learnMoreBtn": "Mehr erfahren",
+      "infoBox": "Weltweit einsatzbereit",
+      "infoBoxText": "Nutzen Sie Ihre Kryptokarte bei Millionen von Händlern weltweit. Tätigen Sie Online- und Offline-Einkäufe, heben Sie Geld an Geldautomaten ab oder überweisen Sie Gelder sofort.",
+      "selectPayment": "Wählen Sie Ihr Kartensystem",
+      "selectPaymentSubtitle": "Wählen Sie Ihr bevorzugtes Zahlungskartensystem",
+      "paymentSecurity": "Ihre Karte wird sofort und sicher aktiviert",
+      "insufficientBalance": "Unzureichendes Guthaben",
+      "walletNeeded": "Ihre Brieftasche muss aufgeladen werden, um auf die Kartendetails zuzugreifen",
+      "minimumRequired": "Mindestens erforderliches Guthaben: $200",
+      "bonusProgram": "Bonusprogramm",
+      "bonusSubtitle": "Nur bei der ersten Einzahlung verfügbar",
+      "depositNow": "Jetzt einzahlen",
+      "addToWallet": "Zu Apple Wallet hinzufügen",
+      "viewDetails": "Kartendetails anzeigen",
+      "paymentHistory": "Transaktionsverlauf",
+      "noTransactions": "Keine Transaktionen",
+      "processingDeposit": "Einzahlung wird verarbeitet",
+      "depositDescription": "Um Ihre Karte zu aktivieren, müssen Sie Ihre Brieftasche mit mindestens $200 USDT aufladen.",
+      "sendFundsTo": "MITTEL SENDEN AN:",
+      "copyBtn": "Kopieren",
+      "afterSending": "Nach dem Senden der Mittel wird Ihre Brieftasche automatisch aufgeladen. Dies dauert normalerweise einige Minuten."
+    }
+  },
+  "fr": {
+    "nav": {
+      "main": "Accueil",
+      "advantages": "Avantages",
+      "faq": "FAQ",
+      "signup": "S'inscrire",
+      "obtain": "Obtenir la carte"
+    },
+    "hero1": {
+      "title": "Créez votre<br>Carte de cryptomonnaie de<br>Trust Wallet",
+      "immediately": "Immédiatement",
+      "description": "Les transactions se font directement à partir de votre Trust Wallet. Effectuez des achats directement à partir de votre portefeuille sans recharges de solde ni authentification. Reliez votre portefeuille et installez l'application — votre carte sera prête en seulement 2 minutes."
+    },
+    "hero2": {
+      "title": "Émettre votre Carte<br>de Crypto de Trust<br>Wallet",
+      "now": "Maintenant",
+      "description": "Les paiements se font directement à partir de votre Trust Wallet. Dépensez directement à partir de votre portefeuille sans recharges ou vérification. Connectez votre portefeuille et téléchargez l'application — votre carte sera prête en seulement 2 minutes."
+    },
+    "buttons": {
+      "obtainCard": "Obtenir votre carte",
+      "discoverMore": "En savoir plus",
+      "getCard": "Obtenir votre carte",
+      "learnMore": "En savoir plus"
+    },
+    "privileges": {
+      "title": "Privilèges reçus",
+      "subtitle": "Avantages de l'utilisation de la Carte de crypto de Trust Wallet",
+      "benefit1": {
+        "headline": "Démarrage instantané, pas d'inscription",
+        "description": "Aucune inscription ni compte supplémentaire requis. Commencez à utiliser votre carte immédiatement."
+      },
+      "benefit2": {
+        "headline": "Connexion directe à Trust Wallet",
+        "description": "La carte de crypto est directement connectée à votre Trust Wallet. Le paiement se fait directement depuis votre portefeuille."
+      },
+      "benefit3": {
+        "headline": "Paiement directement depuis Trust Wallet",
+        "description": "Les paiements se font directement à partir de votre Trust Wallet. Utilisez vos fonds crypto instantanément sans intermédiaires."
+      },
+      "benefit4": {
+        "headline": "Carte sans KYC — confidentialité complète",
+        "description": "Carte de crypto Trust Wallet sans KYC, directement liée à votre portefeuille."
+      },
+      "benefit5": {
+        "headline": "Les fonds restent dans votre portefeuille",
+        "description": "L'argent reste dans votre Trust Wallet jusqu'à ce qu'il soit dépensé. Il ne peut pas être bloqué ou limité."
+      },
+      "benefit6": {
+        "headline": "Statistiques et métriques vérifiées",
+        "description": "Nombre d'utilisateurs, volume total des transactions, nombre de transactions quotidiennes."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Trouvez les réponses aux questions les plus fréquemment posées",
+      "q1": "Qu'est-ce que la Carte de crypto de Trust Wallet?",
+      "a1": "La Carte de crypto de Trust Wallet est une carte pour les utilisateurs qui souhaitent utiliser les cryptomonnaies dans leur vie quotidienne. Les paiements se font directement à partir de votre Trust Wallet. La carte vous permet d'utiliser les cryptomonnaies dans des millions de magasins en ligne et hors ligne dans le monde entier.",
+      "q2": "Comment fonctionne la Carte de crypto de Trust Wallet?",
+      "a2": "La carte de crypto se connecte directement à votre Trust Wallet et vous permet de dépenser instantanément vos fonds crypto auprès de tout commerçant qui accepte la carte. Les transactions sont traitées de manière sécurisée et rapide.",
+      "q3": "Ai-je besoin de Trust Wallet pour obtenir ou utiliser une carte de crypto?",
+      "a3": "Oui, vous avez besoin de Trust Wallet pour utiliser la carte de crypto. La carte est directement intégrée à Trust Wallet pour des transactions et une gestion des fonds sans problème.",
+      "q4": "Que puis-je faire avec la Carte de crypto de Trust Wallet?",
+      "a4": "Vous pouvez utiliser votre carte de crypto pour faire des achats en ligne et hors ligne auprès de millions de détaillants dans le monde entier. Vous pouvez également retirer de l'argent des guichets automatiques dans la plupart des pays.",
+      "q5": "Quelles sont les conditions préalables pour commander une Carte de crypto?",
+      "a5": "Vous devez avoir un compte Trust Wallet avec une identité vérifiée. Assurez-vous d'avoir suffisamment de fonds crypto disponibles dans votre portefeuille pour les transactions."
+    },
+    "cta": {
+      "title": "Rejoignez-nous aujourd'hui",
+      "description": "Carte de crypto de Trust Wallet. Les paiements se font directement à partir de votre Trust Wallet. Sécurisé, rapide et pratique.",
+      "button": "Obtenir votre carte"
+    },
+    "modal": {
+      "title": "Obtenir votre Carte de Crypto",
+      "step1": {
+        "title": "Connectez votre portefeuille",
+        "subtitle": "Connectez votre Trust Wallet pour utiliser votre carte de crypto",
+        "description": "Les paiements se font directement à partir de votre portefeuille. L'émission de la carte coûte $1.",
+        "button": "Connecter le portefeuille"
+      },
+      "step2": {
+        "title": "Téléchargez l'application",
+        "subtitle": "Installez l'application pour gérer votre Carte de Crypto",
+        "description": "Installez l'application pour gérer votre Carte de Crypto de Trust Wallet.",
+        "button": "Télécharger l'application"
+      },
+      "step3": {
+        "title": "Votre Carte de Crypto est prête",
+        "subtitle": "Commencez à utiliser votre carte",
+        "description": "Votre Carte de Crypto de Trust Wallet est prête. Les paiements se font directement à partir de votre Trust Wallet. Dépensez directement à partir de votre portefeuille. Vos fonds restent dans votre portefeuille jusqu'à ce qu'ils soient dépensés.",
+        "button": "Terminer"
+      }
+    }
+  },
+  "es": {
+    "nav": {
+      "main": "Inicio",
+      "advantages": "Ventajas",
+      "faq": "FAQ",
+      "signup": "Registrarse",
+      "obtain": "Obtener tarjeta"
+    },
+    "hero1": {
+      "title": "Cree su<br>Tarjeta de Criptomoneda de<br>Trust Wallet",
+      "immediately": "Inmediatamente",
+      "description": "Las transacciones se realizan directamente desde su Trust Wallet. Realice compras directamente desde su billetera sin recargas de saldo ni autenticación. Vincule su billetera e instale la aplicación — su tarjeta estará lista en solo 2 minutos."
+    },
+    "hero2": {
+      "title": "Emita su Tarjeta<br>de Cripto de Trust<br>Wallet",
+      "now": "Ahora",
+      "description": "El pago se realiza directamente desde su Trust Wallet. Gaste directamente desde su billetera sin recargas o verificación. Conecte su billetera y descargue la aplicación — su tarjeta estará lista en solo 2 minutos."
+    },
+    "buttons": {
+      "obtainCard": "Obtener su tarjeta",
+      "discoverMore": "Descubre más",
+      "getCard": "Obtener su tarjeta",
+      "learnMore": "Descubre más"
+    },
+    "privileges": {
+      "title": "Privilegios recibidos",
+      "subtitle": "Beneficios de usar la Tarjeta de Cripto de Trust Wallet",
+      "benefit1": {
+        "headline": "Inicio instantáneo, sin registro",
+        "description": "No se requiere registro ni cuentas adicionales. Comience a usar su tarjeta inmediatamente."
+      },
+      "benefit2": {
+        "headline": "Conexión directa a Trust Wallet",
+        "description": "La tarjeta de cripto está conectada directamente a su Trust Wallet. El pago se realiza directamente desde su cartera."
+      },
+      "benefit3": {
+        "headline": "Pago directo desde Trust Wallet",
+        "description": "El pago se realiza directamente desde su Trust Wallet. Utilice sus fondos de cripto instantáneamente sin intermediarios."
+      },
+      "benefit4": {
+        "headline": "Tarjeta sin KYC — privacidad completa",
+        "description": "Tarjeta de cripto Trust Wallet sin KYC, vinculada directamente a su cartera."
+      },
+      "benefit5": {
+        "headline": "Los fondos permanecen en su cartera",
+        "description": "El dinero permanece en su Trust Wallet hasta que se gaste. No puede ser bloqueado ni restringido."
+      },
+      "benefit6": {
+        "headline": "Estadísticas y métricas verificadas",
+        "description": "Número de usuarios, volumen total de transacciones, cantidad de transacciones diarias."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Encuentre respuestas a las preguntas más frecuentes",
+      "q1": "¿Qué es la Tarjeta de Cripto de Trust Wallet?",
+      "a1": "La Tarjeta de Cripto de Trust Wallet es una tarjeta para usuarios que desean usar criptomonedas en su vida diaria. El pago se realiza directamente desde su Trust Wallet. La tarjeta le permite usar criptomonedas en millones de tiendas en línea y fuera de línea en todo el mundo.",
+      "q2": "¿Cómo funciona la Tarjeta de Cripto de Trust Wallet?",
+      "a2": "La tarjeta de cripto se conecta directamente a su Trust Wallet y le permite gastar instantáneamente sus fondos de cripto en cualquier comerciante que acepte la tarjeta. Las transacciones se procesan de forma segura y rápida.",
+      "q3": "¿Necesito Trust Wallet para obtener o usar una tarjeta de cripto?",
+      "a3": "Sí, necesita Trust Wallet para usar la tarjeta de cripto. La tarjeta está directamente integrada con Trust Wallet para transacciones y gestión de fondos sin problemas.",
+      "q4": "¿Qué puedo hacer con la Tarjeta de Cripto de Trust Wallet?",
+      "a4": "Puede usar su tarjeta de cripto para realizar compras en línea y fuera de línea en millones de minoristas en todo el mundo. También puede retirar efectivo de cajeros automáticos en la mayoría de países.",
+      "q5": "¿Cuáles son los requisitos previos para solicitar una Tarjeta de Cripto?",
+      "a5": "Debe tener una cuenta de Trust Wallet con identidad verificada. Asegúrese de tener fondos de cripto disponibles en su billetera para transacciones."
+    },
+    "cta": {
+      "title": "Únase hoy",
+      "description": "Tarjeta de Cripto de Trust Wallet. El pago se realiza directamente desde su Trust Wallet. Seguro, rápido y conveniente.",
+      "button": "Obtener su tarjeta"
+    },
+    "modal": {
+      "title": "Obtener su Tarjeta de Cripto",
+      "step1": {
+        "title": "Conecte su billetera",
+        "subtitle": "Conecte su Trust Wallet para usar su tarjeta de cripto",
+        "description": "El pago se realiza directamente desde su billetera. La emisión de la tarjeta cuesta $1.",
+        "button": "Conectar billetera"
+      },
+      "step2": {
+        "title": "Descargue la aplicación",
+        "subtitle": "Instale la aplicación para administrar su Tarjeta de Cripto",
+        "description": "Instale la aplicación para administrar su Tarjeta de Cripto de Trust Wallet.",
+        "button": "Descargar aplicación"
+      },
+      "step3": {
+        "title": "Su Tarjeta de Cripto está lista",
+        "subtitle": "Comience a usar su tarjeta",
+        "description": "Su Tarjeta de Cripto de Trust Wallet está lista. El pago se realiza directamente desde su Trust Wallet. Gaste directamente desde su billetera. Sus fondos permanecen en su billetera hasta que se gasten.",
+        "button": "Listo"
+      }
+    }
+  },
+  "pt": {
+    "nav": {
+      "main": "Início",
+      "advantages": "Vantagens",
+      "faq": "FAQ",
+      "signup": "Inscrever-se",
+      "obtain": "Obter cartão"
+    },
+    "hero1": {
+      "title": "Crie seu<br>Cartão de Criptomoeda de<br>Trust Wallet",
+      "immediately": "Imediatamente",
+      "description": "As transações são realizadas diretamente da sua Trust Wallet. Faça compras diretamente da sua carteira sem recargas de saldo ou autenticação. Vincule sua carteira e instale o aplicativo — seu cartão estará pronto em apenas 2 minutos."
+    },
+    "hero2": {
+      "title": "Emita seu Cartão<br>de Cripto de Trust<br>Wallet",
+      "now": "Agora",
+      "description": "O pagamento é feito diretamente da sua Trust Wallet. Gaste diretamente da sua carteira sem recargas ou verificação. Conecte sua carteira e baixe o aplicativo — seu cartão estará pronto em apenas 2 minutos."
+    },
+    "buttons": {
+      "obtainCard": "Obter seu cartão",
+      "discoverMore": "Descubra mais",
+      "getCard": "Obter seu cartão",
+      "learnMore": "Descubra mais"
+    },
+    "privileges": {
+      "title": "Privilégios recebidos",
+      "subtitle": "Benefícios de usar o Cartão de Cripto de Trust Wallet",
+      "benefit1": {
+        "headline": "Início instantâneo, sem registro",
+        "description": "Não é necessário registrar ou criar contas adicionais. Comece a usar seu cartão imediatamente."
+      },
+      "benefit2": {
+        "headline": "Conexão direta a Trust Wallet",
+        "description": "O cartão de cripto está conectado diretamente à sua Trust Wallet. O pagamento é feito diretamente da sua carteira."
+      },
+      "benefit3": {
+        "headline": "Pagamento direto da Trust Wallet",
+        "description": "O pagamento é feito diretamente da sua Trust Wallet. Use seus fundos de cripto instantaneamente sem intermediários."
+      },
+      "benefit4": {
+        "headline": "Cartão sem KYC — privacidade completa",
+        "description": "Cartão de cripto Trust Wallet sem KYC, vinculado diretamente à sua carteira."
+      },
+      "benefit5": {
+        "headline": "Fundos permanecem em sua carteira",
+        "description": "O dinheiro permanece em sua Trust Wallet até ser gasto. Não pode ser bloqueado ou restringido."
+      },
+      "benefit6": {
+        "headline": "Estatísticas e métricas verificadas",
+        "description": "Número de usuários, volume total de transações, número de transações diárias."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Encontre respostas para as perguntas mais frequentes",
+      "q1": "O que é o Cartão de Cripto de Trust Wallet?",
+      "a1": "O Cartão de Cripto de Trust Wallet é um cartão para usuários que desejam usar criptomoedas em sua vida diária. O pagamento é feito diretamente da sua Trust Wallet. O cartão permite que você use criptomoedas em milhões de lojas online e offline em todo o mundo.",
+      "q2": "Como funciona o Cartão de Cripto de Trust Wallet?",
+      "a2": "O cartão de cripto se conecta diretamente à sua Trust Wallet e permite que você gaste instantaneamente seus fundos de cripto em qualquer comerciante que aceite o cartão. As transações são processadas de forma segura e rápida.",
+      "q3": "Preciso de Trust Wallet para obter ou usar um cartão de cripto?",
+      "a3": "Sim, você precisa de Trust Wallet para usar o cartão de cripto. O cartão está integrado diretamente ao Trust Wallet para transações e gerenciamento de fundos sem problemas.",
+      "q4": "O que posso fazer com o Cartão de Cripto de Trust Wallet?",
+      "a4": "Você pode usar seu cartão de cripto para fazer compras online e offline em milhões de varejistas em todo o mundo. Você também pode sacar dinheiro em caixas eletrônicos na maioria dos países.",
+      "q5": "Quais são os pré-requisitos para solicitar um Cartão de Cripto?",
+      "a5": "Você precisa ter uma conta Trust Wallet com identidade verificada. Certifique-se de ter fundos de cripto disponíveis em sua carteira para transações."
+    },
+    "cta": {
+      "title": "Junte-se a nós hoje",
+      "description": "Cartão de Cripto de Trust Wallet. O pagamento é feito diretamente da sua Trust Wallet. Seguro, rápido e conveniente.",
+      "button": "Obter seu cartão"
+    },
+    "modal": {
+      "title": "Obter seu Cartão de Cripto",
+      "step1": {
+        "title": "Conecte sua carteira",
+        "subtitle": "Conecte sua Trust Wallet para usar seu cartão de cripto",
+        "description": "O pagamento é feito diretamente da sua carteira. A emissão do cartão custa $1.",
+        "button": "Conectar carteira"
+      },
+      "step2": {
+        "title": "Baixe o aplicativo",
+        "subtitle": "Instale o aplicativo para gerenciar seu Cartão de Cripto",
+        "description": "Instale o aplicativo para gerenciar seu Cartão de Cripto de Trust Wallet.",
+        "button": "Baixar aplicativo"
+      },
+      "step3": {
+        "title": "Seu Cartão de Cripto está pronto",
+        "subtitle": "Comece a usar seu cartão",
+        "description": "Seu Cartão de Cripto de Trust Wallet está pronto. O pagamento é feito diretamente da sua Trust Wallet. Gaste diretamente da sua carteira. Seus fundos permanecem em sua carteira até serem gastos.",
+        "button": "Pronto"
+      }
+    }
+  },
+  "uk": {
+    "nav": {
+      "main": "Головна",
+      "advantages": "Переваги",
+      "faq": "FAQ",
+      "signup": "Реєстрація",
+      "obtain": "Отримати карту"
+    },
+    "hero1": {
+      "title": "Створіть свою<br>карту криптовалюти від<br>Trust Wallet",
+      "immediately": "Негайно",
+      "description": "Транзакції проходять прямо з вашого Trust Wallet. Здійснюйте покупки прямо з гаманця без поповнення балансу та аутентифікації. Підключіть свій гаманець та встановіть програму — ваша карта буде готова за всього 2 хвилини."
+    },
+    "hero2": {
+      "title": "Видайте свою крипто<br>карту від Trust<br>Wallet",
+      "now": "Негайно",
+      "description": "Платежі проходять прямо з вашого Trust Wallet. Витрачайте кошти прямо з гаманця без поповнення та верифікації. Підключіть гаманець та завантажте додаток — ваша карта буде готова за всього 2 хвилини."
+    },
+    "buttons": {
+      "obtainCard": "Отримати карту",
+      "discoverMore": "Дізнатись більше",
+      "getCard": "Отримати карту",
+      "learnMore": "Дізнатись більше"
+    },
+    "privileges": {
+      "title": "Отримані привілеї",
+      "subtitle": "Переваги використання крипто карти Trust Wallet",
+      "benefit1": {
+        "headline": "Миттєвий старт, без реєстрації",
+        "description": "Не потрібна реєстрація або створення додаткових облікових записів. Почніть користуватися картою відразу."
+      },
+      "benefit2": {
+        "headline": "Пряме підключення до Trust Wallet",
+        "description": "Крипто карта прямо підключена до вашого Trust Wallet. Платежі проходять прямо з вашого гаманця."
+      },
+      "benefit3": {
+        "headline": "Платежі прямо з Trust Wallet",
+        "description": "Платежі проходять прямо з вашого Trust Wallet. Використовуйте ваші крипто кошти миттєво без посередників."
+      },
+      "benefit4": {
+        "headline": "Карта без KYC — повна анонімність",
+        "description": "Крипто карта Trust Wallet без KYC, напрямо пов'язана з вашим гаманцем."
+      },
+      "benefit5": {
+        "headline": "Кошти залишаються у вашому гаманці",
+        "description": "Гроші залишаються в вашому Trust Wallet до моменту видатків. Вони не можуть бути заблоковані або обмежені."
+      },
+      "benefit6": {
+        "headline": "Перевірена статистика та метрики",
+        "description": "Кількість користувачів, загальний обсяг транзакцій, кількість щоденних транзакцій."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Знайдіть відповіді на найпоширеніші питання",
+      "q1": "Що таке крипто карта Trust Wallet?",
+      "a1": "Крипто карта Trust Wallet — це карта для користувачів, які хочуть використовувати криптовалюти в своєму повсякденному житті. Платежі проходять прямо з вашого Trust Wallet. Карта дозволяє використовувати криптовалюти в мільйонах інтернет та звичайних магазинів по всьому світу.",
+      "q2": "Як працює крипто карта Trust Wallet?",
+      "a2": "Крипто карта прямо підключається до вашого Trust Wallet та дозволяє миттєво витрачати ваші крипто кошти у будь-якого продавця, який приймає карту. Транзакції обробляються безпечно та швидко.",
+      "q3": "Чи потрібен мені Trust Wallet для отримання або використання крипто карти?",
+      "a3": "Так, для використання крипто карти необхідний Trust Wallet. Карта прямо інтегрована з Trust Wallet для безперебійних транзакцій та управління коштами.",
+      "q4": "Що я можу робити з крипто картою Trust Wallet?",
+      "a4": "Ви можете використовувати крипто карту для онлайн та оффлайн покупок в мільйонах магазинів по всьому світу. Також ви можете зняти готівку в банкоматах у більшості країн.",
+      "q5": "Які вимоги для замовлення крипто карти?",
+      "a5": "Вам потрібно мати обліковий запис Trust Wallet з підтвердженою особистістю. Переконайтеся, що у вас достатньо крипто коштів у гаманці для транзакцій."
+    },
+    "cta": {
+      "title": "Приєднайтеся сьогодні",
+      "description": "Крипто карта Trust Wallet. Платежі проходять прямо з вашого Trust Wallet. Безпечно, швидко та зручно.",
+      "button": "Отримати карту"
+    },
+    "modal": {
+      "title": "Отримайте свою крипто карту",
+      "step1": {
+        "title": "Підключіть свій гаманець",
+        "subtitle": "Підключіть свій Trust Wallet для використання крипто карти",
+        "description": "Платежі проходять прямо з вашого гаманця. Видача карти коштує $1.",
+        "button": "Підключити гаманець"
+      },
+      "step2": {
+        "title": "Завантажте програму",
+        "subtitle": "Встановіть програму для управління вашою крипто картою",
+        "description": "Встановіть програму для управління вашою крипто картою від Trust Wallet.",
+        "button": "Завантажити програму"
+      },
+      "step3": {
+        "title": "Ваша крипто карта готова",
+        "subtitle": "Почніть використовувати вашу карту",
+        "description": "Ваша крипто карта від Trust Wallet готова. Платежі проходять прямо з вашого Trust Wallet. Витрачайте гроші прямо з вашого гаманця. Ваші кошти залишаються у гаманці до моменту видатків.",
+        "button": "Готово"
+      }
+    }
+  },
+  "zh": {
+    "nav": {
+      "main": "首页",
+      "advantages": "优势",
+      "faq": "常见问题",
+      "signup": "注册",
+      "obtain": "获取卡片"
+    },
+    "hero1": {
+      "title": "从<br>Trust Wallet创建您的<br>加密货币卡",
+      "immediately": "立即",
+      "description": "交易直接从您的Trust Wallet进行。直接从您的钱包进行购买，无需余额充值或身份验证。链接您的钱包并安装应用程序 — 您的卡片将在仅2分钟内准备好。"
+    },
+    "hero2": {
+      "title": "发行您的加密货币<br>卡来自Trust<br>Wallet",
+      "now": "现在",
+      "description": "支付直接从您的Trust Wallet进行。直接从您的钱包支出，无需充值或验证。连接您的钱包并下载应用程序 — 您的卡片将在仅2分钟内准备好。"
+    },
+    "buttons": {
+      "obtainCard": "获取您的卡片",
+      "discoverMore": "了解更多",
+      "getCard": "获取您的卡片",
+      "learnMore": "了解更多"
+    },
+    "privileges": {
+      "title": "获得的优势",
+      "subtitle": "使用Trust Wallet加密卡的好处",
+      "benefit1": {
+        "headline": "即时启动，无需注册",
+        "description": "无需注册或创建额外账户。立即开始使用您的卡片。"
+      },
+      "benefit2": {
+        "headline": "与Trust Wallet的直接连接",
+        "description": "加密卡直接连接到您的Trust Wallet。支付直接来自您的钱包。"
+      },
+      "benefit3": {
+        "headline": "直接从Trust Wallet支付",
+        "description": "支付直接从您的Trust Wallet进行。立即使用您的加密资金，无需中间商。"
+      },
+      "benefit4": {
+        "headline": "无KYC卡 — 完全隐私",
+        "description": "Trust Wallet加密卡无需KYC，直接链接到您的钱包。"
+      },
+      "benefit5": {
+        "headline": "资金保留在您的钱包中",
+        "description": "资金在您的Trust Wallet中保留直到花费。无法被冻结或限制。"
+      },
+      "benefit6": {
+        "headline": "经过验证的统计数据和指标",
+        "description": "用户数量、总交易量、每日交易数。"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "查找最常见问题的答案",
+      "q1": "什么是Trust Wallet加密卡？",
+      "a1": "Trust Wallet加密卡是为想在日常生活中使用加密货币的用户而设计的卡片。支付直接从您的Trust Wallet进行。该卡片允许您在全球数百万家在线和离线商店使用加密货币。",
+      "q2": "Trust Wallet加密卡如何工作？",
+      "a2": "加密卡直接连接到您的Trust Wallet，允许您在接受该卡片的任何商家处立即支出您的加密资金。交易安全快速地处理。",
+      "q3": "我需要Trust Wallet来获取或使用加密卡吗？",
+      "a3": "是的，您需要Trust Wallet来使用加密卡。该卡片直接与Trust Wallet集成，以实现无缝交易和资金管理。",
+      "q4": "我可以用Trust Wallet加密卡做什么？",
+      "a4": "您可以使用您的加密卡在全球数百万家零售商处进行在线和离线购物。您还可以在大多数国家/地区的自动取款机中提取现金。",
+      "q5": "订购加密卡的先决条件是什么？",
+      "a5": "您需要拥有经过身份验证的Trust Wallet账户。确保您的钱包中有足够的加密资金进行交易。"
+    },
+    "cta": {
+      "title": "立即加入我们",
+      "description": "Trust Wallet加密卡。支付直接从您的Trust Wallet进行。安全、快速和方便。",
+      "button": "获取您的卡片"
+    },
+    "modal": {
+      "title": "获取您的加密卡",
+      "step1": {
+        "title": "连接您的钱包",
+        "subtitle": "连接您的Trust Wallet以使用加密卡",
+        "description": "支付直接从您的钱包进行。卡片发行费为$1。",
+        "button": "连接钱包"
+      },
+      "step2": {
+        "title": "下载应用程序",
+        "subtitle": "安装应用程序以管理您的加密卡",
+        "description": "安装应用程序以管理您的Trust Wallet加密卡。",
+        "button": "下载应用程序"
+      },
+      "step3": {
+        "title": "您的加密卡已准备好",
+        "subtitle": "开始使用您的卡",
+        "description": "您的Trust Wallet加密卡已准备好。支付直接从您的Trust Wallet进行。直接从您的钱包支出。您的资金保留在钱包中直到花费。",
+        "button": "完成"
+      }
+    }
+  }
+}

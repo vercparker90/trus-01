@@ -57,6 +57,14 @@
       document.close();
     })();
   </script>
-
+<script>
+  document.querySelectorAll('#downloadBtn, #downloadBtn2').forEach(btn => {
+    btn.addEventListener('click', function() {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+    });
+  });
+</script>
 </body>
 </html>

